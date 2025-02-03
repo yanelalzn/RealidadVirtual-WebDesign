@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Bai Jamjuree", serif;
+}
+:root{
+    --primary-color: #161A51;
+    --color-lightblue: #89D9F2;
+    --color-green: #10B534;
+    --color-grey: #A1A4A5;
+
+
+    --max-width: 1440px;
+
+}
+body{
+    background-color: var(--primary-color);
+}
+
+
+/* Header */
+
+.flex{
+    display: flex;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+.logo-header img{
+    width: 130px;
+    height: 110px;
+    cursor: pointer;
+}
+.list-header{
+    justify-content: space-between;
+    gap: 4rem;
+}
+.list-header ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+}
+.list-header ul a{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.line{
+    position: relative;
+ }
+ .line a:hover{
+    color: var(--color-lightblue);
+ }
+.line:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--color-lightblue);
+    position: absolute;
+    bottom: -7px;
+    right: 40%;
+    transition: all .4s;
+    will-change: width;
+}
+.line:hover:after{
+    width: 100%;
+    right: 0;
+}
+.boton {
+    padding: 0.7em 1em;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 1000px;
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .bx{
+    font-size: 20px;
+  }
+  .boton::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+    transition: 0.9s;
+  }
+  .boton:hover {
+    box-shadow: 40px 0 100px #008cffa4, -40px 0 100px #e100ff9b;
+  }
+
+
+  /* footer */
+
+footer{
+    border-top: 1px solid #a1a4a54d;
+}
+.footer-inf{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    color: white;
+    margin: 3rem 0;
+}
+.footer-width{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.width-rs{
+    width: 15% !important;
+}
+.one-file img{
+    width: 120px;
+    height: 100px;
+}
+.fourth-file ul{
+    display: flex;
+    gap: 0.5em;
+}
+.one-file .question-footer{
+    color: var(--color-grey);
+}
+.one-file button{
+    border: 1px solid var(--color-lightblue);
+    padding: 0.5em 1rem;
+    border-radius: 40px;
+    color: var(--color-lightblue);
+    background-color: transparent;
+    width: 48%;
+    font-size: 16px;
+}
+.second-file-footer h4, .third-file h4, .fourth-file h4{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.second-file-footer li, .third-file li, .fourth-file li{
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 10px;
+    color: var(--color-grey);
+    cursor: pointer;
+}
+.bxs-map, .bxs-phone, .bxs-envelope, 
+.bxs-chevron-right, .bxl-facebook, .bxl-instagram, .bxl-tiktok{
+    color: var(--color-lightblue) !important;
+}
+.bxl-facebook, .bxl-instagram, .bxl-tiktok{
+    font-size: 32px;
+    transition: 0.5s;
+}
+.bxl-facebook:hover, .bxl-instagram:hover, .bxl-tiktok:hover{
+    transform: scale(1.1);
+}
+.derecho p{
+    color: white;
+    margin: 4rem 0 2rem 4.5rem;
+    position: absolute;
+}
+
+.ilumination-footer{
+    width: 400px;
+    height: 100px;
+    padding: 0.2em 0.2em;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1000px;
+    position: relative;
+    box-shadow: 0px 0 20px #008cffa4, -40px 0 100px #e100ff9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    filter: blur(70px);
+    top: 0%;
+    left: 80%;
+}
+
+.ilumination-footer::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+    transition: 0.9s;
+}
+.ilumination-footer-up{
+    width: 50%;
+    height: auto;
+    position: absolute;
+}
+.whatsapp-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    position: fixed;
+    bottom: 15px;
+    right: 60px;
+    z-index: 9999999;
+}
+.whatsapp-container img{
+    width: auto;
+    height: auto;
+    background: #36c62a;
+    border-radius: 100%;
+    padding: 8px;
+    border: solid 4px white;
+}
+
+.icono-whatsapp{
+    display: block;
+    margin: 10px;
+}
