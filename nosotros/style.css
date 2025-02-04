@@ -110,6 +110,215 @@ header{
   }
 
 
+  /* Banner */
+
+nav{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.banner{
+    /* background-color: #89D9F2; */
+    width: 90%;
+    height: 80vh;
+    border-radius: 0 0 40px 40px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.title-banner{
+    width: 40%;
+    line-height: 40px;
+    margin: 0 0 0 4rem;
+}
+.title-banner strong{
+    color: #008cff;
+}
+.inf-service{
+    background-color: var(--primary-color);
+    border-radius: 0 0 40px 40px
+}
+.title-banner .title-first{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.title-banner .title-second{
+    font-size: 80px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(26, 173, 127, 100), rgb(46, 68, 210, 100));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    line-height: 65px;
+    font-weight: 600;
+}
+.title-banner .title-third{
+    font-size: 20px;
+    color: white;
+    width: 80%;
+    line-height: 25px;
+}
+.title-banner .title-first, .title-banner .title-third{
+    margin: 10px 0;
+}
+.button-banner{
+    margin: 1rem 0;
+    gap: 1rem;
+}
+.boton-aventuras {
+    padding: 0.7em 1em;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 1000px;
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+.boton-aventuras::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #1AAD7F, #2E44D2);
+    z-index: -1;
+    transition: 0.9s;
+  }
+  .boton-aventuras:hover{
+    color: var(--color-lightblue);
+  }
+  .boton-contacto {
+    padding: 0.7em 1em;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 1000px;
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+.boton-contacto::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #1AAD7F, #2E44D2);
+    z-index: -1;
+    transition: 0.9s;
+}
+.img-banner{
+    width: 40%;
+}
+.img-banner img{
+    width: 520px;
+    height: 80vh;
+    position: relative;
+}
+.redes-sociales{
+    width: 5%;
+    text-align: center;
+    position: relative;
+}
+.redes-sociales li{
+    padding: 5px 0;
+}
+.redes-sociales img{
+    width: 30px;
+    height: 32px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.redes-sociales img:hover{
+    transform: scale(1.1);
+}
+
+/* Ilumination Banner */
+
+
+.ilumination{
+    width: 50%;
+    height: 80vh;
+    position: absolute;
+}
+
+.width-ilumi{
+    top: 40%;
+    left: 50%;
+}
+.width-ilumi-one{
+    top: -40%;
+    left: 0%;
+}
+
+.ilumination-button, .ilumination-button-one {
+    width: 300px;
+    height: 300px;
+    padding: 0.2em 0.2em;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1000px;
+    position: relative;
+    box-shadow: 0px 0 20px #008cffa4, -40px 0 100px #e100ff9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    filter: blur(90px);
+}
+.ilumination-button::after, .ilumination-button-one::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+    transition: 0.9s;
+}
+
+
+/* Quienes sms */
+
+.inf-nosotros{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.img-nosotros{
+    width: 40%;
+}
+.img-inf-nosotros{
+    width: 40%;
+    margin-top: 2rem;
+}
+.img-nosotros img{
+    width: 80%;
+    margin-left: 2rem;
+}
+.img-inf-nosotros p{
+    width: 70%;
+}
+.img-inf-nosotros p, h4{
+    color: white;
+    margin-bottom: 1rem;
+}
+.img-inf-nosotros .pregunta{
+    text-align: center;
+}
+
   /* footer */
 
 footer{
