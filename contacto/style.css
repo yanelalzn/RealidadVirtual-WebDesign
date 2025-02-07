@@ -29,10 +29,15 @@ body{
     display: flex;
 }
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 115px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem;
+    z-index: 1000;
 }
 .logo-header img{
     width: 130px;
@@ -138,6 +143,7 @@ header{
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: 6rem;
 }
 .banner{
     /* background-color: #89D9F2; */
@@ -149,7 +155,7 @@ header{
     position: relative;
 }
 .title-banner{
-    width: 40%;
+    width: 37%;
     line-height: 40px;
     margin: 0 0 0 4rem;
 }
@@ -254,11 +260,11 @@ header{
     transition: 0.9s;
 }
 .img-banner{
-    width: 40%;
+    width: 43%;
 }
 .img-banner img{
-    width: 520px;
-    height: 80vh;
+    width: 100%;
+    height: 75vh;
     position: relative;
 }
 .redes-sociales{
@@ -594,9 +600,15 @@ hr{
 
 /* map */
 
+.map-width{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 .map-contacto iframe{
-    width: 100%;
+    width: 90%;
     height: 80vh !important;
+    border-radius: 20px;
 }
 
 
@@ -653,6 +665,9 @@ footer{
     margin-bottom: 10px;
     color: var(--color-grey);
     cursor: pointer;
+}
+.third-file li:hover{
+    transform: scale(1.02);
 }
 .bxs-map, .bxs-phone, .bxs-envelope, 
 .bxs-chevron-right, .bxl-facebook, .bxl-instagram, .bxl-tiktok{
@@ -727,4 +742,159 @@ footer{
 .icono-whatsapp{
     display: block;
     margin: 10px;
+}
+
+
+@media(max-width:991px){
+
+    /* Banner */
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+        height: auto;
+    }
+    .title-banner{
+        margin: 0;
+        width: 92%;
+        line-height: 35px;
+    }
+    .title-banner .title-second{
+        font-size: 60px;
+    }
+    .title-banner .title-third{
+        width: 100%;
+        font-size: 12px;
+    }
+    .button-banner{
+        justify-content: center;
+    }
+    .img-banner{
+        width: 100%;
+    }
+    .img-banner img{
+        width: 300px;
+        height: 30vh;
+    }
+    .redes-sociales ul{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .redes-sociales{
+        width: 100%;
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+    /* Contacto */
+    .form-contacto{
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    .icon-contacto, .formulario-contacto{
+        width: 90%;
+        text-align: center;
+    }
+    .icon-contacto-p2, .icon-contacto-p1{
+        width: 100%;
+    }
+    .icon-cont-inf{
+        width: 46%;
+    }
+    .flex-contact{
+        justify-content: center;
+    }
+    .redessociales-cont{
+        width: 100%;
+    }
+    .icon-cont{
+        justify-content: center;
+    }
+
+    .form-contacto form{
+        padding: 0;
+    }
+    .formulario-contacto label, .form-contacto .name, .form-contacto textarea{
+        text-align: left;
+    }
+
+
+    /* footer */
+    .footer-inf{
+        flex-direction: column;
+    }
+    .footer-width{
+        width: 98% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .derecho p {
+        margin: 4rem 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* Banner */
+    .banner{
+        height: 38vh;
+    }
+    .img-banner img{
+        width: 450px;
+        height: 35vh;
+    }
+    .servicios .title h1{
+        width: 40%;
+    }
+    .block-service{
+        width: 40%;
+    }
+    .ilumination{
+        height: 45vh;
+    }
+    .img-banner{
+        width: 43%;
+    }
+    .title-banner{
+        width: 45%;
+        line-height: 40px;
+        margin: 0;
+    }
+    .img-inf-nosotros p, .img-inf-nosotros h4, 
+    .img-inf-nosotros .pregunta{
+        width: 100%;
+    }
+    .img-nosotros img{
+        margin: 3rem;
+    }
+
+    /* Contacto */
+    .form-contacto form{
+        padding: 0;
+    }
+    .icon-cont-inf{
+        width: 40%;
+    }
+
+
+    /* Mapa */
+    .map-contacto iframe{
+        height: 40vh !important;
+    }
+
+    /* Footer */
+    .footer-inf{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .footer-width, .width-rs{
+        width: 40% !important;
+    }
 }
