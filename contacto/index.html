@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Nosotros - Zago VR</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto - Zago RV</title>
 </head>
-
 <body>
     <header>
         <div class="logo-header">
@@ -18,7 +15,7 @@
         <div class="list-header flex">
             <ul class="menu-horizontal">
                 <li class="line"><a href="../inicio/index.html">Inicio</a></li>
-                <li class="line"><a href="index.html">Nosotros</a></li>
+                <li class="line"><a href="../nosotros/index.html">Nosotros</a></li>
                 <li class=""><a>Servicios <i class='bx bxs-chevron-down' style='color:#ffffff;'  ></i></a>
                     <ul class="menu-vertical">
                         <li><a href="">Play Station 5</a></li>
@@ -28,7 +25,7 @@
                         <li><a href="">Karaoke</a></li>
                     </ul>
                 </li>
-                <li class="line"><a href="../contacto/index.html">Contacto</a></li>
+                <li class="line"><a href="index.html">Contacto</a></li>
             </ul>
             <div class="button-header">
                 <button class="boton">
@@ -43,7 +40,7 @@
                 <p class="title-first">Zago Entertainmet - VR</p>
                 <p class="title-second">Realidad</p>
                 <p class="title-second">Virtual</p>
-                <p class="title-third">¿Quines somos? > <strong>Nosotros</strong></p>
+                <p class="title-third">Cotiza tu fiesta gamer <b>  >  </b><strong><a href="index.html">Contacto</a></strong></p>
             </div>
             <div class="img-banner">
                 <div class="ilumination">
@@ -61,55 +58,97 @@
             </div>
         </div>
     </nav>
-    <div class="inf-nosotros">
-        <div class="img-nosotros">
-            <img src="../img/niños-nosotros.png" alt="">
+
+    <div class="form-contacto">
+        <div class="icon-contacto">
+            <p class="icon-contacto-p1">Contacto</p>
+            <h2 style="margin: 10px 0;">Cotiza tu Fiesta Gamer</h2>
+            <p class="icon-contacto-p2">Llame o envíe un mensaje al formulario de contacto, estaremos encantados de ayudarle.</p>
+            <div class="flex-contact">
+                <div class="icon-cont-inf">
+                    <div class="logo-redes-cont">
+                        <i class='bx bx-map'></i>
+                        <p>Localización</p>       
+                    </div>
+                    <div class="cont-text">
+                        <p>051, Independencia 15332</p>
+                    </div>
+                </div>
+                <div class="icon-cont-inf">
+                    <div class="logo-redes-cont">
+                        <i class='bx bx-envelope'></i>
+                        <p>Correo</p>
+                    </div>
+                    <div class="cont-text">
+                        <p>realidad-virtual@zago.com.pe</p>
+                    </div>
+                </div>
+                <div class="icon-cont-inf">
+                    <div class="logo-redes-cont">
+                        <i class='bx bx-phone'></i>
+                        <p>Teléfono</p>
+                    </div>
+                    <div class="cont-text">
+                        <p>993439261</p>
+                    </div>
+                </div>
+            </div>
+
+           <div class="redessociales-cont">
+                <p>Redes sociales</p>
+                <div class="icon-cont">
+                    <div class="logo-redes-contacto"> 
+                        <i class='bx bxl-facebook'></i>
+                    </div>
+                    <div class="logo-redes-contacto">
+                        <i class='bx bxl-instagram' ></i>
+                    </div>
+                    <div class="logo-redes-contacto"> 
+                        <i class='bx bxl-tiktok' ></i>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="img-inf-nosotros">
-            <h4>Zago VR - Realidad virtual</h4>
-            <p class="pregunta">¿Quiénes somos?</p>
-            <p>Somos Zago VR - Realidad virtual. Empresa dedicada al alquiler de videojuegos, juegos recreativos y más
-                para
-                fiestas a domicilio.
-                +3 AÑOS de experiencia nos respaldan. Siempre brindando los mejores equipos y la mejor atención al
-                cliente de inicio a fin en todo Lima.
-                <br><br>
-                Contamos en nuestro staff con televisores 4K, Full y Ultra HD de 42, 43 pulgadas, consolas Playstation
-                5, Nintendo Switch, los últimos juegos para todas las edades, juegos de movimiento, baile y aventura.
-                Atendemos cumpleaños con videojuegos, reuniones familiares, kermesse en colegios y reuniones
-                empresariales.
-            </p>
+        <div class="formulario-contacto">
+            <p class="title-form">Envíanos un mensaje!</p>
+            <form action="formulario.php" method="post">
+                <div class="name">
+                    <label for="nombre">Nombre <b>*</b></label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </div>
+                <div class="name">
+                    <label for="apellidos">Apellidos <b>*</b></label>
+                    <input type="text" name="introducir_apellidos" id="apellidos" required="obligatorio" placeholder="Escribe tus apellidos">
+                </div>
+                <div class="input-large">
+                    <label for="telefono">Teléfono <b>*</b></label>
+                    <input type="number" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono"> 
+                </div>
+                <div class="input-large">
+                    <label for="email">Email <b>*</b></label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </div>
+                <div class="input-large">
+                    <label for="email">Mensaje</label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                </div>
+                <button class="btn-form" type="submit" name="enviar_formulario" id="enviar">Enviar</button>         
+            </form>
+            
+        </div>
+
+    </div>
+
+
+    <div class="map-contacto">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104992.69478565709!2d-77.03204124650797!3d-12.05629010376524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e67f822413%3A0xfa66bca4dbf44c92!2sJ.E%20Construcciones%20Generales%20S.A.!5e0!3m2!1ses!2spe!4v1736971404324!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
         </div>
     </div>
 
-    <section>
-        <div class="title-vm-nosotros">
-            <i class='bx bx-check' style='color:#89d9f2'></i>
-            <h1>¿Por qué elegirnos?</h1>
-        </div>
-        <div class="inf-mv">
-            <div class="mision">
-                <h3>Misión</h3>
-                <img src="../img/mision.png" alt="">
-                <p>Brindar a nuestros clientes una experiencia única a través de servicios de alquiler de videojuegos de
-                    alta calidad, respaldados por un equipo comprometido y un catálogo siempre actualizado, asegurando
-                    que cada cliente disfrute del mejor entretenimiento en todas las plataformas</p>
-            </div>
-            <div class="vision">
-                <h3>Visión</h3>
-                <img src="../img/vision.png" alt="">
-                <p>Convertirnos en líderes a nivel nacional en el alquiler de videojuegos, ofreciendo a nuestros
-                    clientes el mejor servicio, acceso a juegos de última tecnología y productos innovadores,
-                    garantizando una experiencia única y satisfactoria en todo momento.</p>
-            </div>
-            <div class="objetivo">
-                <h3>Objetivo</h3>
-                <img src="../img/objetivo.png" alt="">
-                <p>Brindad un servicio de calidad, proporcionando diversión, entretenimiento y alegría a nuestros
-                    clientes.</p>
-            </div>
-        </div>
-    </section>
+
+
+
     <footer>
         <div class="footer-inf">
             <div class="one-file footer-width">
@@ -140,7 +179,7 @@
                 <ul>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
-                        Alquiler de VideoJuegos
+                        Play Station 5
                     </li>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
@@ -148,7 +187,7 @@
                     </li>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
-                        Alquiler de Just dance
+                        Nintendo Switch Y Just Dance
                     </li>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
@@ -167,10 +206,10 @@
                         <i class='bx bxl-facebook'></i>
                     </li>
                     <li>
-                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-instagram' ></i>
                     </li>
                     <li>
-                        <i class='bx bxl-tiktok'></i>
+                        <i class='bx bxl-tiktok' ></i>
                     </li>
                 </ul>
             </div>
@@ -182,10 +221,9 @@
             <button class="ilumination-footer"></button>
         </div>
     </footer>
-    <section class="whatsapp-container">
+    <section class="whatsapp-container">   
         <a href="https://wa.me/51914926263?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
-            <img class="icono-whatsapp" src="../img/whatsApps.png" alt=""></a>
+        <img class="icono-whatsapp" src="../img/whatsApps.png" alt=""></a>
     </section>
 </body>
-
 </html>

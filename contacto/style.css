@@ -132,9 +132,9 @@ header{
     box-shadow: 40px 0 100px #008cffa4, -40px 0 100px #e100ff9b;
   }
 
-  /* Banner */
+ /* Banner */
 
-nav{
+ nav{
     display: flex;
     justify-content: center;
     position: relative;
@@ -153,9 +153,9 @@ nav{
     line-height: 40px;
     margin: 0 0 0 4rem;
 }
-.title-banner strong{
-    color: #008cff;
+.title-banner strong a{
     font-weight: 400;
+    color: white;
 }
 .title-banner strong:hover{
     text-decoration: underline;
@@ -185,6 +185,13 @@ nav{
     color: white;
     width: 80%;
     line-height: 25px;
+}
+.title-third b{
+    background: linear-gradient(to right, rgb(26, 173, 127, 100), rgb(46, 68, 210, 100));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 0 10px;
 }
 .title-banner .title-first, .title-banner .title-third{
     margin: 10px 0;
@@ -317,99 +324,284 @@ nav{
     transition: 0.9s;
 }
 
-
-/* Quienes sms */
-
-.inf-nosotros{
+.form-contacto{
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
-    position: relative;
+    gap: 1rem;
+    margin: 3rem 0;
 }
-.img-nosotros{
-    width: 40%;
-}
-.img-inf-nosotros{
-    width: 40%;
+
+.icon-cont{
+    display: flex;
     margin-top: 1rem;
-}
-.img-nosotros img{
-    width: 80%;
-    margin-left: 3rem;
-}
-.img-inf-nosotros p, .img-inf-nosotros h4, .img-inf-nosotros .pregunta{
-    width: 70%;
+    gap: 1rem;
 }
 
-.img-inf-nosotros p:last-child{
-    color: white;
-    margin-bottom: 1rem;
+.icon-contacto, .formulario-contacto{
+    width: 40%;
 }
-
-.img-inf-nosotros h4{
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 24px;
-}
-.img-inf-nosotros .pregunta{
-    text-align: center;
-    color: #008cff;
-    font-size: 22px;
-    margin-bottom: 1rem;
-    padding-right: 3rem;
-}
-
-
-/* Visín y Misión */
-
-section{
-    margin: 4rem 0 4rem 0;
+.formulario-contacto label{
     color: white;
 }
-.bx-check{
+
+.icon-contacto-p1, .icon-contacto-p2{
+    margin: 0;
+}
+.icon-contacto h2{
+    color: white;
+    letter-spacing: 1px;
     font-size: 30px;
 }
+.icon-contacto-p1{
+    background: linear-gradient(to bottom right, #008cff, #e100ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 500;
+    width: 20%;
+    font-size: 18px;
+}
 
-.title-vm-nosotros{
+.icon-contacto-p2{
+    margin: 0 0 20px 0;
+    width: 80%;
+    font-weight: 100;
+    color: white;
+}
+
+
+.icon-cont-inf{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 35%;
+    background-color: #111551;
+    border-radius:20px ;
+}
+ 
+ .icon-cont-inf img{
+    width: 23px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    filter: sepia(70%);
+} 
+
+.cont-text p{
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+    width: 80%;
+    color: white;
+    padding: 0 0 15px 0;
+}
+.cont-text{
+    display: flex;
+    justify-content: center;
+}
+.flex-contact{
     display: flex;
     gap: 1rem;
-    align-items: center;
-    margin: 0 0 0 10rem;
-}
-
-.inf-mv{
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 3rem;
-    
 }
 
-.mision, .vision, .objetivo{
-    width: 35%;
+.logo-redes-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.7em 1em;
+    border-radius: 20px;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.logo-redes-cont .bx, .logo-redes-cont p{
+    color: white;
+}
+
+.logo-redes-cont::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, #161A51, #1c2165);
+    z-index: -1;
+    transition: 0.9s;
+}
+
+.logo-redes-cont i{
+    border-radius: 100%;
+    padding: 7px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+/* .logo-redes-cont:hover{
+    transform: scale(1.1);
+    background-color: var(--color-darkgrey);
+    border: 1px solid var(--color-darkgrey);    
+} */
+ .redessociales-cont{
+    border-top: 1px solid lightblue;
+    width: 72%;
+ }
+
+.redessociales-cont p{
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    margin-top: 1rem;}
+
+hr{
+    width: 75%;
+    margin-inline-start: initial;
+}
+
+
+/* form */
+
+.formulario-contacto{
+    background-color: var(--color-lightgrey);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.formulario-contacto .title-form{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-.mision h3, .vision h3, .objetivo h3{
-    text-transform: uppercase;
+
+.form-contacto form{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 32px;    
+    z-index: 1000;
 }
 
-.mision img, .vision img, .objetivo img{
-    border: 2px solid var(--color-lightblue);
-    border-radius: 100%;
-    padding: 1rem;
+
+.form-contacto .name, .form-contacto textarea{
+    height: 70px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+
 }
-.mision h3, .mision img, .vision h3, .vision img, .objetivo h3, .objetivo img{
-    margin-bottom: 1.5rem;
+.name{
+    width: calc(56% - 29px);
+}
+.name input{
+    border-radius: 22px;
+    border-color: var(--color-grey);
+    border-style: solid;
+    background-color: transparent;
+    width: 95%;
+    padding: 0.8rem;
+    color: white !important;
+}
+::placeholder{
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
 }
 
-.inf-mv p{
+.form-contacto input:first-child{
+    margin-right: 16px;
+}
+
+
+.form-contacto .input-large{
     width: 100%;
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 30px;
+
+}
+.input-large input{
+    border-radius: 22px;
+    border-color: var(--color-grey);
+    border-style: solid;
+    background-color: transparent;
+    width: 98%;
+    padding: 0.8rem;
+    color: white !important;
+}
+.input-large b, .name b{
+    color: #8b24ff;
+}
+.form-contacto textarea{
+    height: 150px;
+    border: 2px solid var(--primary-color);
+    border-radius: 22px;
+    border-color: var(--color-grey);
+    border-style: solid;
+    background-color: transparent;
+    width: 98%;
+    padding: 0.8rem;
+    color: white !important;
 }
 
-  /* footer */
+.form-contacto input:focus, .form-contacto textarea:focus{
+	border: 2px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.btn-form{
+	height: 45px;
+	line-height: 45px;
+	width: 98%;
+	background: transparent;
+	color: #fff;
+	border: none;
+    border-radius: 1000px;
+	cursor: pointer;
+	transition: .1s ease all;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-form:after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 98%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to right , #367bbc, #e100ff);
+    z-index: -1;
+    transition: 0.9s;
+}
+
+
+/* map */
+
+.map-contacto iframe{
+    width: 100%;
+    height: 80vh !important;
+}
+
+
+
+/* footer */
 
 footer{
     border-top: 1px solid #a1a4a54d;
@@ -535,64 +727,4 @@ footer{
 .icono-whatsapp{
     display: block;
     margin: 10px;
-}
-
-
-@keyframes button-nosotros{
-    from {
-        opacity: 0;
-        transform: translate3d(0,100%,0);    
-    }
-    to {
-        opacity: 1;
-        transform: none;  
-    }
-}
-
-.img-inf-nosotros, .objetivo{
-        view-timeline-name: --image;
-        /* view-timeline-axis: block; */
-        animation-timeline: --image;
-        animation-name: button-nosotros;
-        animation-range: entry 25% cover 30%; 
-        animation-fill-mode: both;
-}
-
-@keyframes right-nosotros{
-    from {
-        opacity: 0;
-        transform: translate3d(-100%,0,0);    
-    }
-    to {
-        opacity: 1;
-        transform: none;  
-    }
-}
-
-.img-nosotros, .mision{
-        view-timeline-name: --image;
-        /* view-timeline-axis: block; */
-        animation-timeline: --image;
-        animation-name: right-nosotros;
-        animation-range: entry 25% cover 30%; 
-        animation-fill-mode: both;
-}
-
-@keyframes left-nosotros{
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        transform: none;  
-    }
-}
-
-.vision{
-        view-timeline-name: --image;
-        /* view-timeline-axis: block; */
-        animation-timeline: --image;
-        animation-name: left-nosotros;
-        animation-range: entry 25% cover 30%; 
-        animation-fill-mode: both;
 }
