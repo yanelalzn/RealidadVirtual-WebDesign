@@ -482,7 +482,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1440px;
     width: 100%;
     padding: 0px 100px;
     position: relative;

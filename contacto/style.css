@@ -503,7 +503,7 @@ hr{
 
 }
 .name{
-    width: calc(56% - 29px);
+    width: calc(50%);
 }
 .name input{
     border-radius: 22px;
