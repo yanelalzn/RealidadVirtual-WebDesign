@@ -25,6 +25,10 @@ body{
 
 /* Header */
 
+.menu{
+    display: none;
+}
+
 .flex{
     display: flex;
 }
