@@ -29,10 +29,15 @@ body{
     display: flex;
 }
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 115px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem;
+    z-index: 1000;
 }
 .logo-header img{
     width: 130px;
@@ -132,12 +137,33 @@ header{
     box-shadow: 40px 0 100px #008cffa4, -40px 0 100px #e100ff9b;
   }
   
+   /* menu responsive */
+   .menu-icono{
+    display: none;
+}
+
+#menu:checked ~ .list-header{
+    display: initial;
+}
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+header label {
+    display: none;
+}
+
+  
   /* Banner */
 
 nav{
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: 6rem;
 }
 .banner{
     /* background-color: #89D9F2; */
@@ -149,7 +175,7 @@ nav{
     position: relative;
 }
 .title-banner{
-    width: 40%;
+    width: 37%;
     line-height: 40px;
     margin: 0 0 0 4rem;
 }
@@ -247,11 +273,11 @@ nav{
     transition: 0.9s;
 }
 .img-banner{
-    width: 40%;
+    width: 43%;
 }
 .img-banner img{
-    width: 520px;
-    height: 80vh;
+    width: 100%;
+    height: 75vh;
     position: relative;
 }
 .redes-sociales{
@@ -504,7 +530,7 @@ nav{
     font-size: 40px;
     font-weight: 600;
     color: white;
-    margin: 5rem 0 3rem 0;
+    margin: 5rem 5rem 2rem 5rem;
 }
 
 .line-service {
@@ -634,6 +660,9 @@ nav{
     color: var(--color-grey);
     cursor: pointer;
 }
+.third-file li:hover{
+    transform: scale(1.02);
+}
 .bxs-map, .bxs-phone, .bxs-envelope, 
 .bxs-chevron-right, .bxl-facebook, .bxl-instagram, .bxl-tiktok{
     color: var(--color-lightblue) !important;
@@ -707,4 +736,221 @@ nav{
 .icono-whatsapp{
     display: block;
     margin: 10px;
+}
+
+@media(max-width:991px){
+    
+      /* header */
+      header{
+        padding: 0 2rem;
+    }
+    .menu-icono{
+        display: block;
+    }
+
+    #menu:checked ~ .list-right{
+        display: initial;
+    }
+    .list-header{
+        display: none;
+    }
+    .list-right {
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+    header label{
+        display: block;
+    }
+
+    .list-header{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        background-color: #23005b;
+        display: none;
+    }
+    .menu-horizontal{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .boton{
+        display: none;
+    }
+    .menu-vertical{
+        position: relative;
+        width: 100%;
+    }
+    .menu-horizontal li{
+        width: 100%;
+    }
+    .menu-horizontal a{
+        justify-content: center;
+    }
+
+    /* Banner */
+    .banner{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+        height: auto;
+    }
+    .title-banner{
+        margin: 0;
+        width: 92%;
+        line-height: 35px;
+    }
+    .title-banner .title-second{
+        font-size: 60px;
+    }
+    .title-banner .title-third{
+        width: 100%;
+        font-size: 12px;
+    }
+    .button-banner{
+        justify-content: center;
+    }
+    .img-banner{
+        width: 100%;
+    }
+    .img-banner img{
+        width: 300px;
+        height: 30vh;
+    }
+    .redes-sociales ul{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .redes-sociales{
+        width: 100%;
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+
+    /* Servicios */
+    
+    .service{
+        margin: 4rem 1rem;
+    }
+    .contact-inf{
+        padding: 2rem 1rem 4rem;
+    }
+    .width-includ{
+        flex-direction: column;
+        width: 48%;
+    }
+    .incluye-servicios p:first-of-type{
+        width: 90%;
+    }
+
+    /* VideoJuegos */
+    .first-file .letter{
+        font-size: 80px;
+    }
+    .second-file .umber{
+        font-size: 25px;
+    }
+    .vjuegos-block p{
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .vjuegos-block .img1{
+        height: 170px;
+    }
+    .vjuegos-block .img2{
+        height: 205px;
+    }
+    .vjuegos-block .img3{
+        height: 220px;
+    }
+
+    /* Galeria */
+    .title-galery{
+        margin: 5rem 1rem;
+    }
+    .line-service{
+        font-size: 33px;
+    }
+    .line-service:after{
+        width: 35%;
+        right: 31.5%;
+    }
+
+     /* footer */
+     .footer-inf{
+        flex-direction: column;
+    }
+    .footer-width{
+        width: 98% !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    .derecho p {
+        margin: 4rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    .ilumination-footer{
+        width: 50%;
+    }
+
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* Banner */
+    .banner{
+        height: 38vh;
+    }
+    .img-banner img{
+        width: 450px;
+        height: 35vh;
+    }
+    .servicios .title h1{
+        width: 40%;
+    }
+    .block-service{
+        width: 40%;
+    }
+    .ilumination{
+        height: 45vh;
+    }
+    .img-banner{
+        width: 43%;
+    }
+    .title-banner{
+        width: 45%;
+        line-height: 40px;
+        margin: 0;
+    }
+    .img-inf-nosotros p, .img-inf-nosotros h4, 
+    .img-inf-nosotros .pregunta{
+        width: 100%;
+    }
+    .img-nosotros img{
+        margin: 3rem;
+    }
+
+    .includ-service{
+        justify-content: space-around;
+    }
+
+     /* Footer */
+     .footer-inf{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .footer-width, .width-rs{
+        width: 40% !important;
+    }
 }
