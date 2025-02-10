@@ -691,7 +691,7 @@ nav{
 }
 .question p.show{
     color: white;
-    max-height: 200px; 
+    max-height: 250px; 
     opacity: 1;
     padding:0px 15px 30px 15px;
 }
