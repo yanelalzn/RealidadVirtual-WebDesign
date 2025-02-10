@@ -120,6 +120,13 @@ header{
     align-items: center;
     gap: 0.5em;
   }
+  .boton a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
   .bx{
     font-size: 20px;
   }
@@ -359,6 +366,7 @@ header{
     justify-content: center;
     gap: 1rem;
     margin: 3rem 0;
+    scroll-margin-top: 10rem;
 }
 
 .icon-cont{
@@ -631,6 +639,7 @@ hr{
 .map-contacto iframe{
     width: 90%;
     height: 80vh !important;
+    border-radius: 30px;
 }
 
 .map-width{
@@ -675,10 +684,12 @@ footer{
     border: 1px solid var(--color-lightblue);
     padding: 0.5em 1rem;
     border-radius: 40px;
-    color: var(--color-lightblue);
     background-color: transparent;
     width: 48%;
     font-size: 16px;
+}
+.one-file button a{
+    color: var(--color-lightblue);
 }
 .second-file-footer h4, .third-file h4, .fourth-file h4{
     font-weight: 500;
@@ -690,6 +701,9 @@ footer{
     margin-bottom: 10px;
     color: var(--color-grey);
     cursor: pointer;
+}
+.third-file li a{
+    color: var(--color-grey);
 }
 .third-file li:hover{
     transform: scale(1.02);
