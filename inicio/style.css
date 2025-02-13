@@ -145,7 +145,7 @@ header{
     transition: 0.9s;
   }
   .boton:hover {
-    box-shadow: 40px 0 100px #008cffa4, -40px 0 100px #e100ff9b;
+    box-shadow: 0px 0px 20px #008cffa4, 0px 0px 20px #e100ff9b;
   }
 
   /* menu responsive */
