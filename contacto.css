@@ -1,0 +1,312 @@
+
+/* Formulario */
+
+.form-contacto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 3rem 0;
+    scroll-margin-top: 10rem;
+}
+.icon-cont{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.icon-contacto, .formulario-contacto{
+    width: 40%;
+}
+.formulario-contacto label{
+    color: white;
+}
+.icon-contacto-p1, .icon-contacto-p2{
+    margin: 0;
+}
+.icon-contacto h2{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.icon-contacto-p1{
+    background: linear-gradient(to bottom right, #008cff, #e100ff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 500;
+    width: 20%;
+    font-size: 18px;
+}
+.icon-contacto-p2{
+    margin: 0 0 20px 0;
+    width: 80%;
+    font-weight: 100;
+    color: white;
+}
+.icon-cont-inf{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 35%;
+    background-color: #111551;
+    border-radius:20px ;
+}
+.icon-cont-inf img{
+    width: 23px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    filter: sepia(70%);
+} 
+.cont-text p{
+    margin: 0;
+    font-size: 13px;
+    text-align: center;
+    width: 80%;
+    color: white;
+    padding: 0 0 15px 0;
+}
+.cont-text{
+    display: flex;
+    justify-content: center;
+}
+.flex-contact{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.logo-redes-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.7em 1em;
+    border-radius: 20px;
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.logo-redes-cont .bx, .logo-redes-cont p{
+    color: white;
+}
+.logo-redes-cont::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to top right, #161A51, #1c2165);
+    z-index: -1;
+    transition: 0.9s;
+}
+.logo-redes-cont i{
+    border-radius: 100%;
+    padding: 7px;
+    text-align: center;
+    transition: 0.2s;
+}
+.redessociales-cont{
+    border-top: 1px solid lightblue;
+    width: 72%;
+}
+.redessociales-cont p{
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+hr{
+    width: 75%;
+    margin-inline-start: initial;
+}
+
+/* form */
+
+.formulario-contacto{
+    background-color: var(--color-lightgrey);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.formulario-contacto .title-form{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.form-contacto form{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0 32px;    
+}
+.form-contacto .name, .form-contacto textarea{
+    height: 70px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.name{
+    width: calc(50%);
+}
+.name input{
+    border-radius: 22px;
+    border-color: var(--color-grey);
+    border-style: solid;
+    background-color: transparent;
+    width: 95%;
+    padding: 0.8rem;
+    color: white !important;
+}
+::placeholder{
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+}
+.form-contacto input:first-child{
+    margin-right: 16px;
+}
+.form-contacto .input-large{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+.input-large input{
+    border-radius: 22px;
+    border-color: var(--color-grey);
+    border-style: solid;
+    background-color: transparent;
+    width: 98%;
+    padding: 0.8rem;
+    color: white !important;
+}
+.input-large b, .name b{
+    color: #8b24ff;
+}
+.form-contacto textarea{
+    height: 150px;
+    border: 2px solid var(--primary-color);
+    border-radius: 22px;
+    border-color: var(--color-grey);
+    border-style: solid;
+    background-color: transparent;
+    width: 98%;
+    padding: 0.8rem;
+    color: white !important;
+}
+.form-contacto input:focus, .form-contacto textarea:focus{
+	border: 2px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+.btn-form{
+	height: 45px;
+	line-height: 45px;
+	width: 98%;
+	background: transparent;
+	color: #fff;
+	border: none;
+    border-radius: 1000px;
+	cursor: pointer;
+	transition: .1s ease all;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-form:after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 98%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to right , #367bbc, #e100ff);
+    z-index: -1;
+    transition: 0.9s;
+}
+
+/* map */
+
+.map-width{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.map-contacto iframe{
+    width: 90%;
+    height: 80vh !important;
+    border-radius: 30px;
+}
+.map-width{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+    /* Contacto */
+
+    .form-contacto{
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+    .icon-contacto, .formulario-contacto{
+        width: 90%;
+        text-align: center;
+    }
+    .icon-contacto-p2, .icon-contacto-p1{
+        width: 100%;
+    }
+    .icon-cont-inf{
+        width: 46%;
+    }
+    .flex-contact{
+        justify-content: center;
+    }
+    .redessociales-cont{
+        width: 100%;
+    }
+    .icon-cont{
+        justify-content: center;
+    }
+    .form-contacto form{
+        padding: 0;
+    }
+    .formulario-contacto label, .form-contacto .name, .form-contacto textarea{
+        text-align: left;
+    }
+    .form-contacto{
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1300px){
+
+    /* Contacto */
+
+    .form-contacto form{
+        padding: 0;
+    }
+    .icon-cont-inf{
+        width: 40%;
+    }
+
+    /* Mapa */
+
+    .map-contacto iframe{
+        height: 40vh !important;
+    }
+}

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +7,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <script src="../js/slider.js" defer></script>
-    <script src="../js/main.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/main.js" defer></script>
     <title>Zago-VR</title>
 </head>
-
 <body>
     <header id="Header">
         <div class="logo-header">
-            <a href="index.html"><img src="../img/logo-zago.png" alt=""></a>
+            <a href="index.html"><img src="img/logo-zago.png" alt=""></a>
         </div>
         <input type="checkbox" id="menu" />
         <div class="list-header flex">
             <ul class="menu-horizontal">
                 <li class="line"><a href="index.html">Inicio</a></li>
-                <li class="line"><a href="../nosotros/index.html">Nosotros</a></li>
+                <li class="line"><a href="nosotros.html">Nosotros</a></li>
                 <li><a>Servicios <i class='bx bxs-chevron-down' style='color:#ffffff;'></i></a>
                     <ul class="menu-vertical">
-                        <li><a href="../servicios/playStation5.html">Play Station 5</a></li>
-                        <li><a href="../servicios/realidadVirtual.html">Realidad Virtual</a></li>
-                        <li><a href="../servicios/simuladoresAuto.html">Simuladores de Auto</a></li>
-                        <li><a href="../servicios/nintendoswitchyjustdance.html">Nintendo Switch Y Just Dance</a></li>
-                        <li><a href="../servicios/karaoke.html">Karaoke</a></li>
+                        <li><a href="servicios/playStation5.html">Play Station 5</a></li>
+                        <li><a href="servicios/realidadVirtual.html">Realidad Virtual</a></li>
+                        <li><a href="servicios/simuladoresAuto.html">Simuladores de Auto</a></li>
+                        <li><a href="servicios/nintendoswitchyjustdance.html">Nintendo Switch Y Just Dance</a></li>
+                        <li><a href="servicios/karaoke.html">Karaoke</a></li>
                     </ul>
                 </li>
-                <li class="line"><a href="../contacto/index.html">Contacto</a></li>
+                <li class="line"><a href="contacto.html">Contacto</a></li>
             </ul>
             <div class="button-header">
                 <button class="boton">
@@ -41,7 +39,7 @@
             </div>
         </div>
         <label for="menu">
-            <img src="../img/menu.png" alt="" class="menu-icono">
+            <img src="img/menu.png" alt="" class="menu-icono">
         </label>
     </header>
     <nav>
@@ -52,9 +50,12 @@
                 <p class="title-second">Virtual</p>
                 <p class="title-third">Celebra tu cumpleaños gamer en nuestras sucursales o a domicilio.</p>
                 <div class="button-banner flex">
-                    <button class="boton-contacto"><a href="../contacto/index.html">Contactanos</a></button>
-                    <button class="boton-aventuras"> <a href="#servicios">Aventuras</a>
-                        <i class='bx bx-right-arrow-alt bx-fade-right' color='#ffffff'></i>
+                    <button class="boton-contacto"><a href="contacto.html">Contactanos</a></button>
+                    <button class="boton-aventuras">
+                        <span class="btn-inner">
+                        <a href="#servicios">Aventuras</a>
+                        <i class='bx bx-right-arrow-alt bx-fade-right'></i>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -62,37 +63,43 @@
                 <div class="ilumination">
                     <button class="ilumination-button width-ilumi"></button>
                     <button class="ilumination-button-one width-ilumi-one"></button>
+                    <button class="ilumination-button-one width-ilumi-second"></button>
+                    <button class="ilumination-button-one width-ilumi-thirty"></button>                    
                 </div>
-                <img src="../img/img-banner.png" alt="">
+                <img src="img/img-banner.png" alt="">
             </div>
             <div class="redes-sociales">
                 <ul>
-                    <li><img src="../img/facebook.png" alt=""></li>
-                    <li><img src="../img/social.png" alt=""></li>
-                    <li><img src="../img/tik-tok.png" alt=""></li>
+                    <li><img src="img/facebook.png" alt=""></li>
+                    <li><img src="img/social.png" alt=""></li>
+                    <li><img src="img/tik-tok.png" alt=""></li>
                 </ul>
+            </div>
+            <div class="ilumination-title">
+                    <button class="ilumination-button width-ilum"></button>
+                    <button class="ilumination-button-one width-ilum-one"></button>
             </div>
         </div>
     </nav>
     <div class="servicios" id="servicios">
         <div class="title">
-            <h1 class="linea">Servicios de Alquiler</h1>
+            <h1 class="linea-title">Servicios de Alquiler</h1>
         </div>
         <div class="blocks">
             <div class="block-service">
-                <img src="../img/alquiler.jpg" alt="">
+                <img src="img/alquiler.jpg" alt="">
                 <div class="inf-service">
                     <h4>Play Station 5</h4>
                     <p>Disfruta de los mejores videojuegos que tenemos. <strong>Alquiler de Playstation y Nintendo para
                             fiestas, eventos y empresas</strong>
                     </p>
                     <div class="button-inf">
-                        <a href="../servicios/playStation5.html"><img src="../img/icon-service.png" alt=""></a>
+                        <a href="servicios/playStation5.html"><img src="img/icon-service.png" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="block-service">
-                <img src="../img/servicio1.jpg" alt="">
+                <img src="img/servicio1.jpg" alt="">
                 <div class="inf-service">
                     <h4>Realidad Virtual</h4>
                     <p>Viaja a otros mundos y diviértete con nuestro accesorio para Playstation, <strong>REALIDAD
@@ -100,12 +107,12 @@
                             para
                             fiestas y eventos.</strong></p>
                     <div class="button-inf">
-                        <a href="../servicios/realidadVirtual.html"><img src="../img/icon-service.png" alt=""></a>
+                        <a href="servicios/realidadVirtual.html"><img src="img/icon-service.png" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="block-service">
-                <img src="../img/servicio2.jpg" alt="">
+                <img src="img/servicio2.jpg" alt="">
                 <div class="inf-service">
                     <h4>Simuladores de Auto</h4>
                     <p>Compite contra tus amigos en una carrera como ninguna otra <strong> Alquiler de SIMULADORES DE
@@ -113,12 +120,12 @@
                             para
                             fiestas y eventos.</strong></p>
                     <div class="button-inf">
-                        <a href="../servicios/simuladoresAuto.html"><img src="../img/icon-service.png" alt=""></a>
+                        <a href="servicios/simuladoresAuto.html"><img src="img/icon-service.png" alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="block-service">
-                <img src="../img/servicio4.jpg" alt="">
+                <img src="img/servicio4.jpg" alt="">
                 <div class="inf-service">
                     <h4>Nintendo Switch Y <br>Just Dance</h4>
                     <p style="margin-bottom: 12px;">Que los presentes disfruten del mejor juego de
@@ -126,20 +133,20 @@
                             eventos.</strong>
                         Incluye Luces y sonido.</p>
                     <div class="button-inf">
-                        <a href="../servicios/nintendoswitchyjustdance.html"><img src="../img/icon-service.png"
+                        <a href="servicios/nintendoswitchyjustdance.html"><img src="img/icon-service.png"
                                 alt=""></a>
                     </div>
                 </div>
             </div>
             <div class="block-service">
-                <img src="../img/servicio3.jpg" alt="">
+                <img src="img/servicio3.jpg" alt="">
                 <div class="inf-service">
                     <h4>Karaoke</h4>
                     <p>Con nuestro servicio de <strong>alquiler de Karaoke para cumpleaños en Lima</strong>, cada
                         celebración se convierte en
                         un escenario lleno de risas, música y grandes momentos</p>
                     <div class="button-inf">
-                        <a href="../servicios/karaoke.html"><img src="../img/icon-service.png" alt=""></a>
+                        <a href="servicios/karaoke.html"><img src="img/icon-service.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -161,16 +168,15 @@
             <i id="left" class="fa-solid fa-angle-left"></i>
             <ul class="carousel">
                 <li class="card">
-                    <div class="img"><img src="../img/ns-juego1.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ns-juego1.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Super Mario Party™</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Desafíos</span>
                         <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Nintendo Switch</span>
                     </div>
-
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ns-juego2.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ns-juego2.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>HOT WHEELS UNLEASHED™</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Carreras</span>
@@ -178,7 +184,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ps-juego1.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ps-juego1.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Marvel's Spider-Man 2</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Peleas</span>
@@ -186,7 +192,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ps-juego2.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ps-juego2.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Gran Turismo® 7</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Carrearas</span>
@@ -194,7 +200,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ns-juego6.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ns-juego6.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Let's Sing 2025</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Karaoke</span>
@@ -202,7 +208,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/rv-juego1.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/rv-juego1.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Let's Sing 2025</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Fruit Ninja VR</span>
@@ -210,7 +216,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ps-juego3.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ps-juego3.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Dragon Ball Sparking Zero</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Peleas</span>
@@ -218,7 +224,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ns-juego3.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ns-juego3.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Overcooked! 2</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Desafíos</span>
@@ -226,7 +232,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ns-juego4.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ns-juego4.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Donkey Kong Country</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Desafíos</span>
@@ -234,7 +240,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ps-juego4.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ps-juego4.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Crash Team Racing Nitro-Fueled</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Carreras, Desafios</span>
@@ -242,7 +248,7 @@
                     </div>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="../img/ns-juego5.jpg" alt="img" draggable="false"></div>
+                    <div class="img"><img src="img/ns-juego5.jpg" alt="img" draggable="false"></div>
                     <div class="text-gamer">
                         <h2>Just Dance 2025 Edition</h2>
                         <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Baile</span>
@@ -257,7 +263,7 @@
 
     <div class="divertion-family">
         <div class="title-inf">
-            <h1 class="linea">Diversión para toda la Familia</h1>
+            <h1 class="line">Diversión para toda la Familia</h1>
         </div>
         <div class="icon-inf">
             <div class="date">
@@ -269,14 +275,14 @@
                 <p>Contamos con lo más moderno en tecnología de videojuegos</p>
             </div>
             <div class="face">
-                <img class="img-face" src="../img/face.png" alt="">
+                <img class="img-face" src="img/face.png" alt="">
                 <p>Nuestra prioridad es la de ofrecer el mejor servicio al cliente</p>
             </div>
         </div>
     </div>
     <div class="divertion-family">
         <div class="title-inf">
-            <h1 class="linea">Preguntas Frecuentes</h1>
+            <h1 class="linea-title">Preguntas Frecuentes</h1>
         </div>
         <div class="questions-container">
             <div class="question">
@@ -402,7 +408,7 @@
         </div>
     </div>
     <div class="contacto" id="contacto">
-        <div class="contact-inf">
+        <div class="contact-inf-card">
             <i class='bx bxs-user bx-tada'></i>
             <p>Servicio de alquiler de Realidad Virtual para Zago VR.</p>
             <h2>¡HAZ TU RESERVA AHORA MISMO!</h2>
@@ -414,10 +420,10 @@
     <footer>
         <div class="footer-inf">
             <div class="one-file footer-width">
-                <img src="../img/logo-zago.png" alt="">
+                <img src="img/logo-zago.png" alt="">
                 <p class="question-footer">¿Consultas? Escribanos a nuestro WhatsApp</p>
                 <p>+05 965 874 521</p>
-                <button><a href="../contacto/index.html">Contáctanos</a></button>
+                <button><a href="contacto/index.html">Contáctanos</a></button>
             </div>
             <div class="second-file-footer footer-width">
                 <h4>Contacto</h4>
@@ -441,24 +447,24 @@
                 <ul>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
-                        <a href="../servicios/playStation5.html">Alquiler de Play Station 5</a>
+                        <a href="servicios/playStation5.html">Alquiler de Play Station 5</a>
                     </li>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
-                        <a href="../servicios/karaoke.html">Alquiler de Karaoke</a>
+                        <a href="servicios/karaoke.html">Alquiler de Karaoke</a>
                     </li>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
-                        <a href="../servicios/nintendoswitchyjustdance.html">Alquiler de Nintendo Switch Y Just
+                        <a href="servicios/nintendoswitchyjustdance.html">Alquiler de Nintendo Switch Y Just
                             Dance</a>
                     </li>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
-                        <a href="../servicios/simuladoresAuto.html">Alquiler de Simuladores de auto</a>
+                        <a href="servicios/simuladoresAuto.html">Alquiler de Simuladores de auto</a>
                     </li>
                     <li>
                         <i class='bx bxs-chevron-right'></i>
-                        <a href="../servicios/realidadVirtual.html">Alquiler de Realidad Virtual</a>
+                        <a href="servicios/realidadVirtual.html">Alquiler de Realidad Virtual</a>
                     </li>
                 </ul>
             </div>
@@ -486,10 +492,10 @@
     </footer>
     <section class="whatsapp-container">
         <a href="https://wa.me/51914926263?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
-            <img class="icono-whatsapp" src="../img/whatsApps.png" alt=""></a>
+            <img class="icono-whatsapp" src="img/whatsApps.png" alt=""></a>
     </section>
 
-
+    <script src="js/scrollreveal.min.js"></script>
 </body>
 
 </html>

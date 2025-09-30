@@ -1,0 +1,125 @@
+
+/* Nosotros */
+
+.inf-nosotros{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    position: relative;
+    align-items: center;
+}
+.img-nosotros{
+    width: 40%;
+}
+.img-inf-nosotros{
+    width: 40%;
+    margin-top: 1rem;
+}
+.img-nosotros img{
+    width: 80%;
+    margin-left: 3rem;
+}
+.img-inf-nosotros p, .img-inf-nosotros h4, .img-inf-nosotros .pregunta{
+    width: 70%;
+}
+.img-inf-nosotros p:last-child{
+    color: white;
+    margin-bottom: 1rem;
+}
+.img-inf-nosotros h4{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+.img-inf-nosotros .pregunta{
+    text-align: center;
+    color: #008cff;
+    font-size: 22px;
+    margin-bottom: 1rem;
+    padding-right: 3rem;
+}
+
+/* Visín y Misión */
+
+section{
+    margin: 4rem 0 4rem 0;
+    color: white;
+}
+.bx-check{
+    font-size: 30px;
+}
+
+.title-vm-nosotros{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 0 0 10rem;
+}
+.inf-mv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    
+}
+.mision, .vision, .objetivo{
+    width: 35%;
+    text-align: center;
+}
+.mision h3, .vision h3, .objetivo h3{
+    text-transform: uppercase;
+}
+.mision img, .vision img, .objetivo img{
+    border: 2px solid var(--color-lightblue);
+    border-radius: 100%;
+    padding: 1rem;
+}
+.mision h3, .mision img, .vision h3, .vision img, .objetivo h3, .objetivo img{
+    margin-bottom: 1.5rem;
+}
+.inf-mv p{
+    width: 100%;
+    text-align: justify;
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+    /* Nosotros */
+    
+    .inf-nosotros{
+        flex-direction: column-reverse;
+    }
+    .inf-nosotros{
+        margin: 2rem 0;
+        align-items: center;
+    }
+    .img-inf-nosotros{
+        width: 90%;
+        text-align: center;
+    }
+    .img-inf-nosotros p, .img-inf-nosotros h4, .img-inf-nosotros .pregunta{
+        width: 100%;
+    }
+    .img-inf-nosotros .pregunta{
+        padding-right: 0;
+    }
+    .img-nosotros img{
+        margin-left: 0;
+    }
+    .img-nosotros{
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Misiòn y Visiòn */
+
+    .title-vm-nosotros{
+        margin: 1rem;
+    }
+    .mision, .vision, .objetivo{
+        width: 80%;
+    }
+}
