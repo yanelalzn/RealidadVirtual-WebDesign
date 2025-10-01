@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../js/main.js" defer></script>
+    <script src="../js/slider.js" defer></script>
     <link rel="stylesheet" href="../css/service.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Karaoke</title>
 </head>
 <body>
@@ -89,39 +91,39 @@
                 <p class="cantidad-turno">1-6 jugadores por turno</p>
             </div>
             <div class="includ-service">
-                <div class="width-includ">
+                <div class="width-includ thing-1">
                     <img src="../img/microfono.png" alt="">
                     <p>02 Microfonos Inalambricos</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-2">
                     <img src="../img/parlante.png" alt="">
                     <p>01 Parlante Gigante.</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-3">
                     <img src="../img/musica.png" alt="">
                     <p>Todas las mùsicas a elección</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-4">
                     <img src="../img/television.png" alt="">
                     <p>Televisor 4K / Ultra HD de 55″</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-5">
                     <img src="../img/soporte.png" alt="">
                     <p>Racks pedestal para los Tv's</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-6">
                     <img src="../img/luz.png" alt="">
                     <p>Luces LED Multi Colores</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-7">
                     <img src="../img/banner.png" alt="">
                     <p>Banners alusivos a los juegos</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-8">
                     <i class='bx bx-user'></i>
                     <p>1 Miembro de nuestro staff</p>
                 </div>
-                <div class="width-includ">
+                <div class="width-includ thing-9">
                     <img src="../img/sorpresa.png" alt="">
                     <p>Vales con descuentos para tus invitados</p>
                 </div>
@@ -129,13 +131,12 @@
             <div class="price-service">
                 <p>x 3 horas</p>
             </div>
-            <div class="flex">
+            <div class="flex reserve-service">
                 <button>¡RESÉRVALO!</button>
                 <i class='bx bx-left-arrow-alt bx-fade-left' style='color:#ffffff;; display: flex; margin-top: 1rem; align-items: center;'  ></i>
             </div>
         </div>
     </div>
-
 
     <div class="videojuegos">
         <div class="title-vjuegos">
@@ -147,29 +148,103 @@
                 <h1 class="umber">Disponibles en el catálogo</h1>
             </div>
         </div>
-        <div class="img-vjuegos">
-            <div class="vjuegos-block">
-                <img class="img1" src="../img/juego4.jpg" alt="">
-                <p>Zombie</p>
-            </div>
-            <div class="vjuegos-block">
-                <img class="img2" src="../img/juego5.jpg" alt="">
-                <p>Basquet</p>
-            </div>
-            <div class="vjuegos-block">
-                <img class="img3" src="../img/juego1.jpg" alt="">
-                <p>Peleas</p>
-            </div>
-            <div class="vjuegos-block">
-                <img class="img2" src="../img/juego2.jpg" alt="">
-                <p>Disparos</p>
-            </div>
-            <div class="vjuegos-block">
-                <img class="img1" src="../img/juego3.jpg" alt="">
-                <p>Baile</p>
-            </div>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="../img/ns-juego1.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Super Mario Party™</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Desafíos</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Nintendo Switch</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ns-juego2.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>HOT WHEELS UNLEASHED™</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Carreras</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Nintendo Switch</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ps-juego1.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Marvel's Spider-Man 2</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Peleas</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Play Station 5</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ps-juego2.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Gran Turismo® 7</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Carrearas</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Play Station 5</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ns-juego6.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Let's Sing 2025</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Karaoke</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Nintendo Switch</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/rv-juego1.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Let's Sing 2025</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Fruit Ninja VR</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Realidad Virtual</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ps-juego3.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Dragon Ball Sparking Zero</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Peleas</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Play Station 5</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ns-juego3.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Overcooked! 2</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Desafíos</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Nintendo Switch</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ns-juego4.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Donkey Kong Country</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Desafíos</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Nintendo Switch</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ps-juego4.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Crash Team Racing Nitro-Fueled</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Carreras, Desafios</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Play Station 5</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../img/ns-juego5.jpg" alt="img" draggable="false"></div>
+                    <div class="text-gamer">
+                        <h2>Just Dance 2025 Edition</h2>
+                        <span><i class='bx bx-star' style='color:#ffffff'></i>Género: Baile</span>
+                        <span><i class='bx bxs-joystick-alt' style='color:#ffffff'></i>Consola: Nintendo Switch</span>
+                    </div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
+        <p class="wrappes-p">Si no encuentras el juego que quieres, ¡solo pídelo y lo conseguimos!</p>
     </div>
+
     <div class="galery-image">
         <div class="title-galery">
             <p class="line-service">Galeria de nuestras aventuras</p>

@@ -1355,7 +1355,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 3rem 0;
+    margin: 5rem 0;
     scroll-margin-top: 10rem;
 }
 .icon-cont{
@@ -1665,7 +1665,7 @@ hr{
 .inf-nosotros{
     display: flex;
     justify-content: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
     position: relative;
     align-items: center;
 }
@@ -1739,7 +1739,8 @@ section{
     margin-bottom: 1.5rem;
 }
 .inf-mv p{
-    width: 100%;
+    width: 80%;
+    margin: auto;
     text-align: justify;
 }
 
@@ -1767,10 +1768,11 @@ section{
         padding-right: 0;
     }
     .img-nosotros img{
+        width: 100%;
         margin-left: 0;
     }
     .img-nosotros{
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
@@ -1784,6 +1786,9 @@ section{
     }
     .title-vm-nosotros h1{
         font-size: 25px;
+    }
+    .inf-mv p{
+        width: 100%;
     }
 }
 

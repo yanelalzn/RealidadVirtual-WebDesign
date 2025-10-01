@@ -231,10 +231,9 @@
 .scroll{
     position: relative;
     display: flex;
-    width: 1200px;
+    width: 100%;
     overflow: hidden;
     padding: 1rem 2rem;
-    /* mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent); */
 }
 
 .scroll .este{
@@ -251,10 +250,6 @@
     100%{
         transform: translateX(-100%);
     }
-}
-
-.scroll:hover .este{
-    animation-play-state: paused;
 }
 
 .title-clientes{
