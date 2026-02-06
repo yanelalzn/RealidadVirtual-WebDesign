@@ -561,7 +561,6 @@ nav{
 }
 .title-vjuegos{
     line-height: 65px;
-    margin: 7rem 0 2rem 0;
 }
 .videojuegos p{
     text-align: center;
@@ -694,11 +693,116 @@ nav{
     /* object-fit: cover; */
 }
 
+/* Paquetes */
+
+.pricing {
+    padding: 1rem 0 3rem 0;
+}
+.title__pricing{
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.title__pricing h1{
+    color: white;
+    font-size: 40px;
+}
+.pricing__container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    color: #000 !important;
+}
+.pack {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,.1);
+    transition: transform .3s;
+}
+.pack:hover {
+    transform: translateY(-10px);
+}
+.pack--active {
+    background: linear-gradient(180deg, #4b0ca8, #2b035c);
+    color: #fff;
+    transform: scale(1.05);
+}
+.pack__title {
+    font-weight: 600;
+    font-size: 25px;
+}
+.pack__time {
+    opacity: .8;
+}
+.pack__old {
+    text-decoration: line-through;
+    opacity: .6;
+}
+.pack__price {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.pack__img {
+    width: 240px;
+}
+.pack__list {
+    text-align: left;
+    margin: 2rem 0;
+    padding: 0;
+    list-style: none;
+}
+.pack__list li {
+    margin-bottom: .7rem;
+}
+.btn {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 30px;
+    border: none;
+    background: #7c2ae8;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn--white {
+    background: #fff;
+    color: #4b0ca8;
+}
+.ri-check-line{
+    font-weight: 900;
+}
+.pack--active {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #2b035c, #4b0ca8);
+    color: #fff;
+}
+/* forma morada clara */
+.pack--active::before {
+    content: "";
+    position: absolute;
+    width: 307px;
+    height: 485px;
+    background: radial-gradient(circle at center, #7c3aed, #5b21b6);
+    opacity: 0.45;
+    border-radius: 25%;
+    top: 138px;
+    right: -221px;
+    z-index: 0;
+    transform: rotate(-30deg);
+    box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, 0.3);
+}
+.pack--active > * {
+    position: relative;
+    z-index: 1;
+}
+
 /* Diversion */
 
-.divertion{
-    padding: 5rem 0;
-}
 .divertion-family .title-inf{
     display: flex;
     justify-content: center;
@@ -977,7 +1081,6 @@ footer{
 }
 
 @media(max-width:576px){
-   
     /* Servicios */
 
     .servicios .title h1{
@@ -1081,6 +1184,16 @@ footer{
     }
     .button-contact{
         font-size: 15px;
+    }
+    /* Packets */
+    .pricing__container {
+        grid-template-columns: 1fr;
+    }
+    .pack {
+        padding: 1.5rem;
+    }
+    .pack__price {
+    font-size: 2rem;
     }
 
     /* footer */
@@ -1268,6 +1381,17 @@ footer{
     }
     .ilumination-footer{
         left: 50%;
+    }
+
+    /* Paquete */
+    .pricing__container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card--active {
+        transform: none;
+    }
+    .pack--active{ 
+        transform: none;
     }
 
     /* Footer */
@@ -1704,7 +1828,7 @@ hr{
 /* Visín y Misión */
 
 section{
-    margin: 4rem 0 4rem 0;
+    padding: 4rem 0 4rem 0;
     color: white;
 }
 .bx-check{
