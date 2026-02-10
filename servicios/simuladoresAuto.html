@@ -7,41 +7,51 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/main.js" defer></script>
     <script src="../js/slider.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Simuladores de Autos - Zago RV</title>
 </head>
 <body>
-    <header id="Header">
-        <div class="logo-header">
-            <a href="../index.html"><img src="../img/logo-zago.png" alt=""></a>
-        </div>
-        <input type="checkbox" id="menu"/>
-        <div class="list-header flex">
-            <ul class="menu-horizontal">
-                <li class="line"><a href="../index.html">Inicio</a></li>
-                <li class="line"><a href="../nosotros.html">Nosotros</a></li>
-                <li class=""><a>Servicios <i class='bx bxs-chevron-down' style='color:#ffffff;'  ></i></a>
-                    <ul class="menu-vertical">
-                        <li><a href="playStation5.html">Play Station 5</a></li>
-                        <li><a href="realidadVirtual.html">Realidad Virtual</a></li>
-                        <li><a href="simuladoresAuto.html">Simuladores de Auto</a></li>
-                        <li><a href="nintendoswitchyjustdance.html">Nintendo Switch Y Just Dance</a></li>
-                        <li><a href="karaoke.html">Karaoke</a></li>
-                    </ul>
-                </li>
-                <li class="line"><a href="../contacto.html">Contacto</a></li>
-            </ul>
-            <div class="button-header">
-                <button class="boton">
-                    <a href="#contacto"><i class='bx bx-phone'></i> Haz tu reserva</a> 
-                </button>
+   <header class="header" id="header">
+        <nav class="nav container">
+            <!-- LOGO -->
+            <div class="logo-header">
+                <a href="../index.html"><img src="../img/logo-zago.png" alt=""></a>
             </div>
-        </div>
-        <label for="menu">
-            <img src="../img/menu.png" alt="" class="menu-icono">
-        </label>
+            <!-- MENU -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="menu-horizontal">
+                    <li class="line"><a href="../index.html">Inicio</a></li>
+                    <li class="line"><a href="../nosotros.html">Nosotros</a></li>
+                    <li class=""><a>Servicios <i class='bx bxs-chevron-down' style='color:#ffffff;'  ></i></a>
+                        <ul class="menu-vertical">
+                            <li><a href="playStation5.html">Play Station 5</a></li>
+                            <li><a href="realidadVirtual.html">Realidad Virtual</a></li>
+                            <li><a href="simuladoresAuto.html">Simuladores de Auto</a></li>
+                            <li><a href="nintendoswitchyjustdance.html">Nintendo Switch Y Just Dance</a></li>
+                            <li><a href="karaoke.html">Karaoke</a></li>
+                        </ul>
+                    </li>
+                    <li class="line"><a href="../contacto.html">Contacto</a></li>
+                </ul>
+                <!-- BOTÓN -->
+                <div class="button-header">
+                    <button class="boton">
+                        <a href="#contacto"><i class='bx bx-phone'></i> Haz tu reserva</a>
+                    </button>
+                </div>
+                <!-- CLOSE -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
     </header>
     <nav>
         <div class="banner flex ">

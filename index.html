@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script src="js/slider.js" defer></script>
@@ -13,35 +13,50 @@
     <title>Zago-VR</title>
 </head>
 <body>
-    <header id="Header">
-        <div class="logo-header">
-            <a href="index.html"><img src="img/logo-zago.png" alt=""></a>
-        </div>
-        <input type="checkbox" id="menu" />
-        <div class="list-header flex">
-            <ul class="menu-horizontal">
-                <li class="line"><a href="index.html">Inicio</a></li>
-                <li class="line"><a href="nosotros.html">Nosotros</a></li>
-                <li><a>Servicios <i class='bx bxs-chevron-down' style='color:#ffffff;'></i></a>
-                    <ul class="menu-vertical">
-                        <li><a href="servicios/playStation5.html">Play Station 5</a></li>
-                        <li><a href="servicios/realidadVirtual.html">Realidad Virtual</a></li>
-                        <li><a href="servicios/simuladoresAuto.html">Simuladores de Auto</a></li>
-                        <li><a href="servicios/nintendoswitchyjustdance.html">Nintendo Switch Y Just Dance</a></li>
-                        <li><a href="servicios/karaoke.html">Karaoke</a></li>
-                    </ul>
-                </li>
-                <li class="line"><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="button-header">
-                <button class="boton">
-                    <a href="#contacto"><i class='bx bx-phone'></i> Haz tu reserva</a>
-                </button>
+   <header class="header" id="header">
+        <nav class="nav container">
+            <!-- LOGO -->
+            <div class="logo-header">
+                <a href="index.html">
+                    <img src="img/logo-zago.png" alt="">
+                </a>
             </div>
-        </div>
-        <label for="menu">
-            <img src="img/menu.png" alt="" class="menu-icono">
-        </label>
+            <!-- MENU -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="menu-horizontal">
+                    <li class="line"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="line"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                    <li>
+                        <a class="nav__link">Servicios 
+                           <i class="ri-arrow-down-s-line"></i>
+                        </a>
+                        <ul class="menu-vertical">
+                            <li><a href="servicios/playStation5.html">Play Station 5</a></li>
+                            <li><a href="servicios/realidadVirtual.html">Realidad Virtual</a></li>
+                            <li><a href="servicios/simuladoresAuto.html">Simuladores de Auto</a></li>
+                            <li><a href="servicios/nintendoswitchyjustdance.html">Nintendo Switch Y Just Dance</a></li>
+                            <li><a href="servicios/karaoke.html">Karaoke</a></li>
+                        </ul>
+                    </li>
+                    <li class="line"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                </ul>
+
+                <!-- BOTÓN -->
+                <div class="button-header">
+                    <button class="boton">
+                        <a href="#contacto"><i class='bx bx-phone'></i> Haz tu reserva</a>
+                    </button>
+                </div>
+                <!-- CLOSE -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
     </header>
     <nav>
         <div class="banner flex">
@@ -266,62 +281,81 @@
     </section>
     <section class="pricing">
         <div class="title__pricing">
-            <h1 class="linea-title">Nuestros paquetes</h1>
+            <h1 class="linea-title">Nuestros Combos</h1>
         </div>
         <div class="pricing__container">
             <!-- PACK 1 -->
             <article class="pack">
-            <h3 class="pack__title">PACK 1</h3>
-            <p class="pack__time">⏱ 2 horas de juego</p>
-            <p class="pack__old">Precio original S/.600</p>
-            <h2 class="pack__price">S/.500</h2>
-            <img src="img/controles.png" alt="VR" class="pack__img">
-            <ul class="pack__list">
-                <li><i class="ri-check-line"></i> 3 Visores de realidad virtual</li>
-                <li><i class="ri-check-line"></i> Más de 15 juegos a elegir</li>
-                <li><i class="ri-check-line"></i> 1 Smart TV 55” 4K</li>
-                <li><i class="ri-check-line"></i> 1 Rack pedestal para TV</li>
-                <li><i class="ri-check-line"></i> Luces LEDs</li>
-                <li><i class="ri-check-line"></i> 1 Capacitador guardián</li>
-                <li><i class="ri-cash-line"></i> + S/.100 la hora adicional</li>
-            </ul>
-            <button class="btn">OBTENER DESCUENTO</button>
+                <h3 class="pack__title">COMBO 1</h3>
+                <p class="pack__time">⏱ 4 horas de juego</p>
+                <p class="pack__old">Precio original S/.600</p>
+                <h4 class="name__title">Just Dance y <br>Karaoke</h4>
+                <h2 class="pack__price">S/.500</h2>
+                <img src="img/controles.png" alt="VR" class="pack__img">
+                <ul class="pack__list">
+                    <li><i class="ri-check-line"></i> 02 Microfonos Inalambricos</li>
+                    <li><i class="ri-check-line"></i> 01 Parlante Gigante.</li>
+                    <li><i class="ri-check-line"></i> Todas las mùsicas a elección</li>
+                    <li><i class="ri-check-line"></i> Televisor 4K / Ultra HD de 55″</li>
+                    <li><i class="ri-check-line"></i> Racks pedestal para los Tv's</li>
+                    <li><i class="ri-check-line"></i> Banners alusivos a los juegos</li>                    
+                    <li><i class="ri-check-line"></i> Luces LED Multi Colores</li>
+                    <li><i class="ri-check-line"></i> 1 Miembro de nuestro staff</li>
+                    <li><i class="ri-check-line"></i> 1 Consola Nintendo Switch</li>
+                    <li><i class="ri-check-line"></i> + de 15 juegos y experiencias a elección</li>
+                    <li><i class="ri-check-line"></i> Vales con descuentos para tus invitados</li>
+                    <li><i class="ri-cash-line"></i> + S/.100 la hora adicional</li>
+                </ul>
+                <button class="btn">OBTENER DESCUENTO</button>
             </article>
             <!-- PACK 2 DESTACADO -->
             <article class="pack pack--active">
-            <h3 class="pack__title"  style="font-size: 35px;">PACK 2</h3>
-            <p class="pack__time">⏱ 3 horas de juego</p>
-            <p class="pack__old">Precio original S/.900</p>
-            <h2 class="pack__price">S/.700</h2>
-            <img src="img/controles.png" alt="VR" class="pack__img">
-            <ul class="pack__list">
-                <li><i class="ri-check-line"></i> 3 Visores de realidad virtual</li>
-                <li><i class="ri-check-line"></i> Más de 15 juegos a elegir</li>
-                <li><i class="ri-check-line"></i> 1 Smart TV 55” 4K</li>
-                <li><i class="ri-check-line"></i> 1 Rack pedestal para TV</li>
-                <li><i class="ri-check-line"></i> Luces LEDs</li>
-                <li><i class="ri-check-line"></i> 1 Capacitador guardián</li>
-                <li><i class="ri-cash-line"></i> + S/.100 la hora adicional</li>
-            </ul>
-            <button class="btn btn--white">OBTENER DESCUENTO</button>
+                <h3 class="pack__title"  style="font-size: 35px;">COMBO 2</h3>
+                <p class="pack__time">⏱ 4 horas de juego</p>
+                <p class="pack__old">Precio original S/.1200</p>
+                <h4 class="name__title">La experiencia<br>Completa</h4>
+                <h2 class="pack__price">S/.1100</h2>
+                <img src="img/controles.png" class="pack__img">
+                <ul class="pack__list">
+                    <li><i class="ri-check-line"></i> 2 Consola Play Station 5</li>
+                    <li><i class="ri-check-line"></i> 8 mandos Dual Sense</li>
+                    <li><i class="ri-check-line"></i> 2 Oculus Quest 3</li>
+                    <li><i class="ri-check-line"></i> 2 Mandos de Realidad Virtual</li>
+                    <li><i class="ri-check-line"></i> 02 Butaca de cuero</li>
+                    <li><i class="ri-check-line"></i> 02 Microfonos Inalambricos</li>
+                    <li><i class="ri-check-line"></i> Luces LED Multi Colores</li>
+                    <li><i class="ri-check-line"></i> Televisor 4K / Ultra HD de 42″ o 43″</li>
+                    <li><i class="ri-check-line"></i> 01 Parlante Gigante.</li>
+                    <li><i class="ri-check-line"></i> Racks pedestal para los Tv's</li>
+                    <li><i class="ri-check-line"></i> Banners alusivos a los juegos</li>
+                    <li><i class="ri-check-line"></i> 2 Miembro de nuestro staff</li>
+                    <li><i class="ri-cash-line"></i> + S/.100 la hora adicional</li>
+                </ul>
+                <button class="btn btn--white">OBTENER DESCUENTO</button>
             </article>
             <!-- PACK 3 -->
             <article class="pack">
-            <h3 class="pack__title">PACK 3</h3>
-            <p class="pack__time">⏱ 4 horas de juego</p>
-            <p class="pack__old">Precio original S/.1200</p>
-            <h2 class="pack__price">S/.900</h2>
-            <img src="img/controles.png" class="pack__img">
-            <ul class="pack__list">
-                <li><i class="ri-check-line"></i> 3 Visores de realidad virtual</li>
-                <li><i class="ri-check-line"></i> Más de 15 juegos a elegir</li>
-                <li><i class="ri-check-line"></i> 3 Smart TVs 50” 4K</li>
-                <li><i class="ri-check-line"></i> 3 Racks pedestal para TV</li>
-                <li><i class="ri-check-line"></i> Luces LEDs</li>
-                <li><i class="ri-check-line"></i> 1 Capacitador guardián</li>
-                <li><i class="ri-cash-line"></i> + S/.100 la hora adicional</li>
-            </ul>
-            <button class="btn">OBTENER DESCUENTO</button>
+                <h3 class="pack__title">COMBO 3</h3>
+                <p class="pack__time">⏱ 4 horas de juego</p>
+                <p class="pack__old">Precio original S/.900</p>
+                <h4 class="name__title">Play Station 5 y<br>Simuladores de Auto</h4>
+                <h2 class="pack__price">S/.800</h2>
+                <img src="img/controles.png" alt="VR" class="pack__img">
+                <ul class="pack__list">
+                    <li><i class="ri-check-line"></i> 2 Consola Play Station 5</li>
+                    <li><i class="ri-check-line"></i> 8 mandos Dual Sense</li>
+                    <li><i class="ri-check-line"></i> + de 15 juegos y experiencias a elección</li>
+                    <li><i class="ri-check-line"></i> Televisor 4K / Ultra HD de 55″</li>
+                    <li><i class="ri-check-line"></i> Racks pedestal para los Tv's</li>
+                    <li><i class="ri-check-line"></i> 02 Simulador de auto</li>
+                    <li><i class="ri-check-line"></i> 02 Butaca de cuero</li>
+                    <li><i class="ri-check-line"></i> Juegos de Carreras</li>
+                    <li><i class="ri-check-line"></i> 1 Miembro de nuestro staff</li>
+                    <li><i class="ri-check-line"></i> Banners alusivos a los juegos</li>
+                    <li><i class="ri-check-line"></i> Vales con descuentos para tus invitados</li>
+                    <li><i class="ri-cash-line"></i> + S/.100 la hora adicional</li>
+                </ul>
+                <button class="btn">OBTENER DESCUENTO</button>
             </article>
         </div>
     </section>
@@ -352,7 +386,7 @@
             <div class="question">
                 <button>
                     <span>¿Qué es el servicio de Alquiler de Videojuegos para fiestas?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     Es un servicio de entretenimiento original y muy divertido que consiste en llevar «Estaciones de
@@ -364,7 +398,7 @@
             <div class="question">
                 <button>
                     <span>¿Cuánto tiempo de servicio dan y cuánto cuesta la hora adicional?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     Todos nuestros paquetes son por 4 horas, como mínimo. Puedes solicitar tiempo adicional, siempre y
@@ -380,7 +414,7 @@
             <div class="question">
                 <button>
                     <span>¿Quienes pueden jugar videojuegos?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     Los videojuegos son para todos, sin importar la edad, aunque algunas experiencias son más apropiadas
@@ -400,7 +434,7 @@
             <div class="question">
                 <button>
                     <span>¿Cuántas personas como máximo pueden jugar?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     Depende del tipo de consola: en PlayStation, Nintendo Switch o Just Dance, pueden jugar entre 1 y 4
@@ -414,7 +448,7 @@
             <div class="question">
                 <button>
                     <span>¿Dejan los equipos en mi evento y se van?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     ¡No! Un miembro de nuestro staff se queda para instalar todo y organizar los turnos entre
@@ -433,7 +467,7 @@
             <div class="question">
                 <button>
                     <span>¿El precio de los paquetes incluye movilidad?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     No. La movilidad se cobra un adicional de acuerdo al distrito donde viva. Para conocer la
@@ -444,7 +478,7 @@
             <div class="question">
                 <button>
                     <span>¿Qué ocurre si los asistentes no saben jugar a videojuegos?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     "No tienes de qué preocuparte. Nuestro equipo de expertos gamers se encargará de todo.
@@ -459,7 +493,7 @@
             <div class="question">
                 <button>
                     <span>¿Puedo llamarlos el mismo día del evento?</span>
-                    <i class="fas fa-chevron-down d-arrow"></i>
+                    <i class="ri-arrow-down-s-line d-arrow"></i>
                 </button>
                 <p>
                     Todos nuestros servicios se pactan con, al menos, un día de anticipación. Toma las previsiones del
