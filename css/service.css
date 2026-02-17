@@ -542,17 +542,12 @@
     }
 
      /* footer */
-     .footer-inf{
-        flex-direction: column;
-    }
     .footer-width{
         width: 98% !important;
         flex-direction: column;
-        align-items: center;
     }
     .derecho p {
         margin: 4rem 0;
-        width: 100%;
         text-align: center;
     }
     .ilumination-footer{
