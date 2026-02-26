@@ -126,3 +126,15 @@ sr.reveal(".reserve-service", { delay: 400, origin: "right", distance: "50px" })
 /* ---------- GALERÍA / CLIENTES ---------- */
 sr.reveal(".title-galery", { delay: 150, origin: "bottom", distance: "80px" });
 sr.reveal(".cliente", { delay: 200, origin: "bottom", distance: "80px", interval: 100 });
+
+
+
+/*=====================SHOW SCROLL UP====================*/
+const scrollUp = () =>{
+    const scrollUp = document.getElementById('scroll-up')
+    // When the scroll is higher than 350 viewport height, add the show-scroll class
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
+
+window.addEventListener('scroll', scrollUp)

@@ -26,10 +26,10 @@
             <!-- MENU -->
             <div class="nav__menu" id="nav-menu">
                 <ul class="menu-horizontal">
-                    <li class="line"><a href="index.html" class="nav__link">Inicio</a></li>
-                    <li class="line"><a href="nosotros.html" class="nav__link">Nosotros</a></li>
+                    <li class="line"><a href="index.html#home" class="nav__link active-link">Inicio</a></li>
+                    <li class="line"><a href="nosotros.html#nosotros" class="nav__link">Nosotros</a></li>
                     <li>
-                        <a class="nav__link">Servicios 
+                        <a href="#service">Servicios 
                            <i class="ri-arrow-down-s-line"></i>
                         </a>
                         <ul class="menu-vertical">
@@ -40,7 +40,7 @@
                             <li><a href="servicios/karaoke.html">Karaoke</a></li>
                         </ul>
                     </li>
-                    <li class="line"><a href="contacto.html" class="nav__link">Contacto</a></li>
+                    <li class="line"><a href="contacto.html#contacto" class="nav__link">Contacto</a></li>
                 </ul>
 
                 <!-- BOTÓN -->
@@ -61,20 +61,33 @@
         </nav>
     </header>
     <nav>
-        <div class="banner flex">
+        <section class="banner flex" id="home">
             <div class="title-banner">
-                <p class="title-first">Cumpleaños Gamer a Domicilio</p>
-                <p class="title-second">Realidad</p>
-                <p class="title-second">Virtual</p>
-                <p class="title-third">Celebra tu cumpleaños gamer en nuestras sucursales o a domicilio.</p>
-                <div class="button-banner flex">
-                    <button class="boton-contacto"><a href="contacto.html">Contactanos</a></button>
-                    <button class="boton-aventuras">
-                        <span class="btn-inner">
-                        <a href="#servicios">Aventuras</a>
-                        <i class='bx bx-right-arrow-alt bx-fade-right'></i>
-                        </span>
-                    </button>
+                <h2 class="tagline">
+                    <span class="spark spark-left"></span>
+                    Convierte su cumpleaños en una
+                    <span class="spark spark-right"></span>
+                </h2>
+                <p class="title-second">Aventura <span>de</span></p>
+                <p class="title-second">Realidad Virtual</p>
+                <p class="title-third">Llevamos tu cumpleaños gamer a empresas, eventos y domicilios. ¡La diversión va donde tú estés!</p>
+                <ul class="benefits">
+                    <li><i class="ri-check-line"></i> Equipos de última generación</li>
+                    <li><i class="ri-check-line"></i> Experiencias multiplayer</li>
+                    <li><i class="ri-check-line"></i> Servicio a domicilio</li>
+                </ul>
+                <p class="social-proof">
+                    <i class="ri-star-s-line"></i> Más de 500 cumpleaños realizados 🎉<br>
+                    <strong>Diversión garantizada</strong>
+                </p>
+                <div class="button-banner">
+                    <button class="boton-contacto"><a href="contacto.html"><i class="fab fa-whatsapp"></i>  Contactanos</a></button>
+                    
+                    <div class="button-header">
+                        <button class="boton boton_cont">
+                            <a href="#contacto">Aventuras <i class='bx bx-right-arrow-alt bx-fade-right'></i></a>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="img-banner">
@@ -89,7 +102,7 @@
                     <div class="bolita"></div>
                     <div class="bolita"></div>
                 </div>
-                <img src="img/img-banner.png" alt="">
+                <img src="img/zaggy-rv.png" alt="">
             </div>
             <div class="redes-sociales">
                 <ul>
@@ -102,7 +115,7 @@
                     <button class="ilumination-button width-ilum"></button>
                     <button class="ilumination-button-one width-ilum-one"></button>
             </div>
-        </div>
+        </section>
     </nav>
     <section class="servicios container" id="servicios">
         <div class="title">
@@ -113,8 +126,7 @@
                 <img class="object-position" src="img/alquiler.jpg" alt="">
                 <div class="inf-service">
                     <h4>Play Station 5</h4>
-                    <p>Disfruta de los mejores videojuegos que tenemos. <strong>Alquiler de Playstation y Nintendo para
-                            fiestas, eventos y empresas</strong>
+                    <p>Disfruta de los mejores videojuegos que tenemos. <strong>Alquiler de PlayStation para fiestas, eventos y empresas públicas o privadas.</strong>
                     </p>
                     <div class="button-inf">
                         <a href="servicios/playStation5.html"><img src="img/icon-service.png" alt=""></a>
@@ -279,7 +291,11 @@
             </ul>
             <i id="right" class="fa-solid fa-angle-right"></i>
         </div>
-        <p class="wrappes-p">Si no encuentras el juego que quieres, ¡solo pídelo y lo conseguimos!</p>
+        <p class="wrappes-p">
+            <span class="sparks spark-left"></span>
+            &nbsp;&nbsp;Si no encuentras el juego que quieres, ¡solo pídelo y lo conseguimos!&nbsp;&nbsp;
+            <span class="sparks spark-left"></span>
+        </p>
     </section>
     <section class="pricing">
         <div class="title__pricing">
@@ -368,7 +384,7 @@
         <div class="icon-inf">
             <div class="date">
                 <i class='bx bx-calendar'></i>
-                <p>Con 2 años de experiencia en el mercado</p>
+                <p>Con 3 años de experiencia en el mercado</p>
             </div>
             <div class="game">
                 <i class='bx bxs-joystick'></i>
@@ -567,7 +583,8 @@
                 </ul>
             </div>
             <div class="fourth-file footer-width width-rs">
-                <h4>Redes Sociales</h4>
+                <h4>Que no te lo cuenten…</h4>
+                <p>Síguenos y vive la experiencia Zago.</p>
                 <ul>
                     <li>
                         <i class='bx bxl-facebook'></i>
@@ -582,17 +599,19 @@
             </div>
         </div>
         <div class="derecho">
-            <p>2025 © Todos los derechos reservados</p>
+            <p>2026 © Todos los derechos reservados</p>
         </div>
-        <div class="ilumination-footer-up">
-            <button class="ilumination-footer"></button>
-        </div>
+        <div class="ilumination-footer"></div>
     </footer>
-    <section class="whatsapp-container">
-        <a href="https://wa.me/51914926263?text=Hola!%20Me%20gustar%C3%ADa%20informaci%C3%B3n%20de%20tus%20servicios.">
-            <img class="icono-whatsapp" src="img/whatsApps.png" alt="">
-        </a>
-    </section>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=51942875386&text=Hola%20👋%20estoy%20interesado(a)%20en%20sus%20servicios."
+    class="whatsapp-float"
+    target="_blank">
+        <img src="img/whatsApps.png" alt="WhatsApp">
+    </a>
     <script src="js/scrollreveal.min.js"></script>
 </body>
 
