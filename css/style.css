@@ -9,7 +9,7 @@
     font-family: "Bai Jamjuree", serif;
 }
 :root{
-    --primary-color: #10174b;
+    --primary-color: #0f1845;
     --color-lightblue: #89D9F2;
     --color-green: #10B534;
     --color-grey: #A1A4A5;
@@ -211,9 +211,9 @@ nav{
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-image: url(../img/banner-fondo.png);
+    background-image: url(../img/banner-fondo-1.png);
     background-repeat: no-repeat;
-    background-size: 100% 116%;
+    background-size: 109% 104%;
 }
 .title-banner{
     width: 40%;
@@ -250,6 +250,7 @@ nav{
     font-size: 20px;
 }
 .title-banner .title-second{
+    text-transform: uppercase;
     font-size: 60px;
     background: linear-gradient(
     to bottom,
@@ -262,6 +263,9 @@ nav{
     -webkit-background-clip: text;
     line-height: 55px;
     font-weight: 600;
+}
+.title-second-capat{
+    text-transform: none !important;
 }
 .title-second span{
     font-size: 50px;
@@ -277,6 +281,9 @@ nav{
 .title-banner .title-first, .title-banner .title-third{
     margin: 20px 0;
 }
+.benefits-mar{
+    margin: 18px 0 30px 0;
+}
 .title-banner ul li i{
     color: #3BF091;
 }
@@ -285,9 +292,12 @@ nav{
     font-size: 18px;
 }
 .social-proof{
-    margin: 18px 0;
+    margin: 18px 0 30px 0;
     color: white;
     line-height: 25px;
+}
+.social-proof i{
+    color: yellow;
 }
 .social-proof strong{
     font-size: 18px;
@@ -303,7 +313,7 @@ nav{
     padding: 12px 25px !important;
 }
 .boton_cont a{
-    text-transform: capitalize;
+    text-transform: none;
     font-size: 18px;
 }
 .boton-aventuras {
@@ -333,8 +343,7 @@ nav{
 }
 .boton-aventuras:hover {
     color: #38bdf8;
-    box-shadow: 0 0 1px #38bdf8,
-                0 0 5px #38bdf8;
+    box-shadow: 0 0 1px #38bdf8, 0 0 5px #38bdf8;
 }
 .boton-contacto {
     padding: 12px 25px;
@@ -346,12 +355,11 @@ nav{
     transition:0.3s;
     border: none;
 }
-
+.boton-contacto:hover{
+    transform: scale(1.10);
+}
 .boton-contacto a{
     color: white;
-}
-.boton-contacto:hover{
-    transform: scale(1.1px);
 }
 .boton-contacto::after{
     content: '';
@@ -370,7 +378,7 @@ nav{
     z-index: 10;
 }
 .img-banner img{
-    width: 85%;
+    width: 100%;
     height: 80vh;
     position: relative;
     filter: drop-shadow(2px 4px 6px rgba(104, 32, 176, 0.706));
@@ -1056,7 +1064,7 @@ footer{
     color: white;
 }
 .one-file button{
-     border: 1px solid #00FFCC;
+    border: 1px solid #00FFCC;
     padding: 0.6em 1.4rem;
     border-radius: 40px;
     background: transparent;
@@ -1067,7 +1075,6 @@ footer{
 }
 .one-file button:hover {
     box-shadow: 0px 0px 20px #008cffa4, 0px 0px 20px #e100ff9b;
-
 }
 .one-file button a{
     color: #00FFCC;
@@ -1092,7 +1099,6 @@ footer{
 .third-file li:hover{
     transform: scale(1.02);
 }
- 
 .bxl-facebook, .bxl-instagram, .bxl-tiktok{
     color: #00FFCC !important;
 }
