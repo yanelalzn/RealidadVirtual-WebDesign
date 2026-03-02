@@ -23,8 +23,8 @@
             <!-- MENU -->
             <div class="nav__menu" id="nav-menu">
                 <ul class="menu-horizontal">
-                    <li class="line"><a href="../index.html">Inicio</a></li>
-                    <li class="line"><a href="../nosotros.html">Nosotros</a></li>
+                    <li class="line"><a href="../index.html" class="nav__link">Inicio</a></li>
+                    <li class="line"><a href="../nosotros.html" class="nav__link">Nosotros</a></li>
                     <li class=""><a>Servicios <i class='bx bxs-chevron-down' style='color:#ffffff;'  ></i></a>
                         <ul class="menu-vertical">
                             <li><a href="playStation5.html">Play Station 5</a></li>
@@ -34,7 +34,8 @@
                             <li><a href="karaoke.html">Karaoke</a></li>
                         </ul>
                     </li>
-                    <li class="line"><a href="../contacto.html">Contacto</a></li>
+                    <li class="line"><a href="../empresa.html" class="nav__link">Empresa</a></li>
+                    <li class="line"><a href="../contacto.html" class="nav__link">Contacto</a></li>
                 </ul>
                 <!-- BOTÓN -->
                 <div class="button-header">
@@ -54,12 +55,27 @@
         </nav>
     </header>
     <nav>
-        <div class="banner flex ">
+        <section class="banner flex banner_contact" id="home">
             <div class="title-banner">
-                <p class="title-first">Cumpleaños Gamer a Domicilio</p>
-                <p class="title-second">Realidad</p>
-                <p class="title-second">Virtual</p>
-                <p class="title-third">Estación de <b>  >  </b> <strong>Realidad Virtual</strong></p>
+                <h2 class="tagline">
+                    <span class="spark spark-left"></span>
+                    Zago Entertainment - Realidad Virtual
+                    <span class="spark spark-right"></span>
+                </h2>
+                <p class="title-second title-second-capat">Hablemos <span>de</span></p>
+                <p class="title-second title-second-capat">tu próximo evento</p>
+                <p class="title-third">Cuéntanos qué tienes en mente y recibe una propuesta personalizada en minutos.</p>
+                <ul class="benefits benefits-mar">
+                    <li><i class="ri-checkbox-circle-fill"></i> Escribenos por WhatsApp</li>
+                    <li><i class="ri-car-fill"></i> Servicio a Dominicilo</li>
+                </ul>
+                <div class="button-banner">
+                    <div class="button-header">
+                        <button class="boton boton_cont">
+                            <a href="#contacto"><i class="ri-whatsapp-fill"></i>Escribenos por WhatsApp</a>
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="img-banner">
                 <div class="ilumination">
@@ -68,12 +84,7 @@
                     <button class="ilumination-button-one width-ilumi-second"></button>
                     <button class="ilumination-button-one width-ilumi-thirty"></button>                    
                 </div>
-                <div class="bols">
-                    <div class="bolita"></div>
-                    <div class="bolita"></div>
-                    <div class="bolita"></div>
-                </div>
-                <img src="../img/nosotros-banner.png" alt="">
+                <img src="../img/zaggy-psp.png" class="banner-contact">
             </div>
             <div class="redes-sociales">
                 <ul>
@@ -86,7 +97,7 @@
                     <button class="ilumination-button width-ilum"></button>
                     <button class="ilumination-button-one width-ilum-one"></button>
             </div>
-        </div>
+        </section>
     </nav>
     <div class="service">
         <div class="title-service">
@@ -104,7 +115,7 @@
             <div class="includ-service">
                 <div class="width-includ thing-1">
                     <img src="../img/lentes.png" alt="">
-                    <p>4 Oculus Quest 2</p>
+                    <p>4 Oculus Quest 3</p>
                 </div>
                 <div class="width-includ thing-2">
                     <img src="../img/controlador.png" alt="">
@@ -130,21 +141,9 @@
                     <img src="../img/banner.png" alt="">
                     <p>Banners alusivos a los juegos</p>
                 </div>
-                <!-- <div class="width-includ thing-8">
-                    <img src="../img/portatil.png" alt="">
-                    <p>1 Laptop gamer de alta gama</p>
-                </div> -->
                 <div class="width-includ thing-9">
-                    <i class='bx bx-user'></i>
+                    <img src="../img/user-nos.png" alt="">
                     <p>1 Miembro de nuestro staff</p>
-                </div>
-                <!-- <div class="width-includ thing-10">
-                    <img src="../img/delivery.png" alt="">
-                    <p>Movilidad incluída*</p>
-                </div> -->
-                <div class="width-includ thing-11">
-                    <img src="../img/sorpresa.png" alt="">
-                    <p>Vales con descuentos para tus invitados</p>
                 </div>
             </div>
             <div class="price-service">
@@ -388,7 +387,10 @@
     <a href="https://api.whatsapp.com/send?phone=51942875386&text=Hola%20👋%20estoy%20interesado(a)%20en%20sus%20servicios."
     class="whatsapp-float"
     target="_blank">
-        <img src="../img/whatsApps.png" alt="WhatsApp">
+    <div class="wsp-message" id="wsp-message">
+        ¡Contáctanos! 👋
+    </div>
+        <img src="../img/zaggy.png" alt="WhatsApp">
     </a>
     <script src="../js/scrollreveal.min.js"></script>
 </body>

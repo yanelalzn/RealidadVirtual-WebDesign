@@ -32,9 +32,9 @@ const serviciosBtn = document.querySelector('.menu-horizontal > li:nth-child(3) 
 const submenu = document.querySelector('.menu-horizontal > li:nth-child(3) .menu-vertical');
 
 serviciosBtn.addEventListener('click', () => {
-  if (window.innerWidth <= 919) {
-    submenu.classList.toggle('show');
-  }
+    if (window.innerWidth <= 919) {
+        submenu.classList.toggle('show');
+    }
 });
 
 // Quesion
@@ -55,11 +55,11 @@ buttons.forEach(button => {
 /*============= SCROLL REVEAL ANIMATION ===============*/
 
 const sr = ScrollReveal({
-  origin: "top",
-  distance: window.innerWidth < 768 ? "20px" : "30px",
-  duration: 500,
-  easing: "cubic-bezier(0.4, 0, 0.2, 1)",
-  reset: false
+    origin: "top",
+    distance: window.innerWidth < 768 ? "20px" : "30px",
+    duration: 500,
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+    reset: false
 });
 
 sr.reveal(".banner", { delay: 100, opacity: 0 });
@@ -67,9 +67,12 @@ sr.reveal(".header", { delay: 300, origin: "top", distance: "20px" });
 sr.reveal(".redes-sociales", { delay: 200, origin: "right" });
 
 sr.reveal(".title-first, .title-second, .title-third", { distance: "0px", scale: 0.9, opacity: 0, interval: 150 });
+sr.reveal(".benefits", { delay: 300, distance: "0px", scale: 0.9, opacity: 0, interval: 150 });
+sr.reveal(".social-proof", { delay: 300, distance: "0px", scale: 0.9, opacity: 0, interval: 150 });
 
-sr.reveal(".boton-contacto", { delay: 400, distance: "0px", scale: 0.95 });
-sr.reveal(".boton-aventuras", { delay: 450, distance: "0px", scale: 0.95, opacity: 0 });
+
+sr.reveal(".button-banner", { delay: 400, distance: "0px", scale: 0.95 });
+sr.reveal(".button-header", { delay: 450, distance: "0px", scale: 0.95, opacity: 0 });
 
 /* SERVICIOS */
 sr.reveal("#servicios .title", { delay: 200, distance: "0px", scale: 0.95, opacity: 0 });
@@ -114,10 +117,10 @@ sr.reveal(".incluye-servicios", { delay: 250, distance: 0 });
 sr.reveal(".incluye-servicios h3, .weight, .icon-user", { delay: 300, origin: "bottom", distance: "80px", interval: 100 });
 
 sr.reveal(".thing-1, .thing-2, .thing-3, .thing-4, .thing-5, .thing-6, .thing-7, .thing-8, .thing-9, .thing-90, .thing-10, .thing-11", { 
-  delay: 300, 
-  origin: "bottom", 
-  distance: "40px", 
-  interval: 80 
+    delay: 300, 
+    origin: "bottom", 
+    distance: "40px", 
+    interval: 80 
 });
 
 sr.reveal(".price-service", { delay: 400, origin: "left", distance: "50px" });
@@ -138,3 +141,14 @@ const scrollUp = () =>{
 }
 
 window.addEventListener('scroll', scrollUp)
+
+/*=====================MASCOTA WSP====================*/
+const wspMessage = document.getElementById("wsp-message");
+
+    window.addEventListener("scroll", function(){
+        if(window.scrollY > 300){
+            wspMessage.classList.add("show");
+        }else{
+            wspMessage.classList.remove("show");
+        }
+    });
