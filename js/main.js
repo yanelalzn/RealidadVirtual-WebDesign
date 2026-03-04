@@ -72,7 +72,6 @@ sr.reveal(".social-proof", { delay: 300, distance: "0px", scale: 0.9, opacity: 0
 
 
 sr.reveal(".button-banner", { delay: 400, distance: "0px", scale: 0.95 });
-sr.reveal(".button-header", { delay: 450, distance: "0px", scale: 0.95, opacity: 0 });
 
 /* SERVICIOS */
 sr.reveal("#servicios .title", { delay: 200, distance: "0px", scale: 0.95, opacity: 0 });

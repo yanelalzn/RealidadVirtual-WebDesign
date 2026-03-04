@@ -18,9 +18,6 @@
 body{
     background-color: var(--primary-color);
 }
-.container{
-    width: 1200px;
-}
 a{
     color: white;
 }
@@ -71,27 +68,6 @@ header{
     cursor: pointer;
     display: flex;
     align-items: center;
-}
-.menu-horizontal li:hover .menu-vertical{
-    display: block;
-}
-.menu-vertical{
-    position: absolute;
-    display: none;
-    width: 200px;
-    background-color: rgb(0, 0, 0, .5);
-    z-index: 1000;
-    border-top: 2px solid lightblue;
-}
-.menu-vertical li:hover{
-    background-color: #320777;
-}
-.menu-vertical li a{
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;
-    text-transform: capitalize;
 }
 .line{
     position: relative;
@@ -262,9 +238,20 @@ nav{
     -webkit-background-clip: text;
     line-height: 55px;
     font-weight: 600;
+    padding-bottom: 8px;
+    display: flex;
+    gap: 15px;
 }
 .title-second-capat{
     text-transform: none !important;
+    font-size: 55px !important;
+    padding-bottom: 0px;
+    line-height: 56px !important;
+}
+.title-second .img-5{
+    width: 50px;
+    height: auto;
+    transform: rotateZ(8deg);
 }
 .title-second span{
     font-size: 50px;
@@ -363,7 +350,7 @@ nav{
     border: none;
 }
 .boton-contacto:hover{
-    transform: scale(1.10);
+    transform: scale(1.04);
 }
 .boton-contacto a{
     color: white;
@@ -387,6 +374,7 @@ nav{
     height: 75vh;
     position: relative;
     right: -7vh;
+    top: -2vh;
     filter: drop-shadow(2px 4px 6px rgba(104, 32, 176, 0.706));
 }
 .redes-sociales{
@@ -519,9 +507,9 @@ nav{
 
   /* servicios */
 
-    .servicios{
+.servicios{
     scroll-margin-top: 10rem;
-    }
+}
 .servicios .title{
     display: flex;
     justify-content: center;
@@ -644,11 +632,12 @@ nav{
 .second-file .umber{
     font-size: 30px;
     font-family: "Jaro", serif;
-    color: #CD4B23;
+    color: #6fd3ff;
     letter-spacing: 1px;
 }
 .title-vjuegos{
     line-height: 65px;
+    margin: 5rem 0 30px;
 }
 .videojuegos p{
     text-align: center;
@@ -1477,23 +1466,6 @@ footer{
     .nav__close {
         display: block;
     }
-    .menu-vertical{
-        position: relative;
-        width: 100%;
-        background: rgba(0,0,0,.4);
-        border-top: none;
-        display: none;
-    }
-    .menu-vertical li a{
-        padding-left: 2rem;
-        font-size: 16px;
-    }
-
-    /* cuando se abre con click */
-    .menu-vertical.show{
-        display: block;
-    }
- 
 }
 
 @media(max-width:865px){
@@ -1513,7 +1485,7 @@ footer{
         font-size: 50px;
     }
     .title-banner .title-second > span{
-       font-size: 40px; 
+        font-size: 40px; 
     }
     .title-banner .title-third{
         width: 100%;
@@ -1999,7 +1971,9 @@ hr{
 }
 .img-nosotros img{
     width: 80%;
+    height: 40vh;
     margin-left: 3rem;
+    object-fit: cover;
 }
 .img-inf-nosotros p, .img-inf-nosotros h4, .img-inf-nosotros .pregunta{
     width: 70%;
