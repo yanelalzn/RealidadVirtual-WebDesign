@@ -186,7 +186,7 @@ nav{
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-image: url(../img/banner-fondo-1.png);
+    background-image: url(../img/banner-fondo-1.jpg);
     background-repeat: no-repeat;
     background-size: 109% 104%;
 }
@@ -823,6 +823,7 @@ nav{
 }
 .pack__img {
     width: 240px;
+    margin-top: 20px;
 }
 .pack__list {
     text-align: left;
@@ -1372,7 +1373,7 @@ footer{
 @media (min-width: 769px) and (max-width: 1023px){
 
     .banner{
-        background-image: url(../img/banner-fondo-mobile.png);
+        background-image: url(../img/banner-fondo-mobile.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
