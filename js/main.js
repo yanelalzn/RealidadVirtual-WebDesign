@@ -2,6 +2,8 @@ const navMenu = document.getElementById('nav-menu')
 const navToggle = document.getElementById('nav-toggle')
 const navClose = document.getElementById('nav-close')
 const navLinks = document.querySelectorAll('.nav__link')
+const header = document.getElementById('header')
+const logo = document.querySelector('.logo-header img')
 
 navToggle.addEventListener('click', () => {
     navMenu.classList.add('show-menu')
@@ -17,13 +19,15 @@ navLinks.forEach(link => {
     })
 })
 
-window.addEventListener('scroll', ()=> {
-    var scroll = window.scrollY
+window.addEventListener('scroll', () => {
+    let scroll = window.scrollY
 
-    if(scroll>10){
+    if (scroll > 50) {
         header.style.backgroundColor = '#000c4bc9'
-    }else{
+        logo.classList.add('logo-small')
+    } else {
         header.style.backgroundColor = 'transparent'
+        logo.classList.remove('logo-small')
     }
 })
 

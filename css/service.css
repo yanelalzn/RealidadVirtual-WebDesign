@@ -246,8 +246,8 @@
 
 @media(max-width:991px){
     
-      /* header */
-      header{
+    /* header */
+    header{
         padding: 0 2rem;
     }
     .menu-icono{
@@ -298,47 +298,6 @@
         justify-content: center;
     }
 
-    /* Banner */
-    .banner{
-        flex-direction: column;
-        text-align: center;
-        margin-top: 1rem;
-        height: auto;
-    }
-    .title-banner{
-        margin: 0;
-        width: 92%;
-        line-height: 35px;
-    }
-    .title-banner .title-second{
-        font-size: 60px;
-    }
-    .title-banner .title-third{
-        width: 100%;
-        font-size: 12px;
-    }
-    .button-banner{
-        justify-content: center;
-    }
-    .img-banner{
-        width: 100%;
-    }
-    .img-banner img{
-        width: 300px;
-        height: 30vh;
-    }
-    .redes-sociales ul{
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .redes-sociales{
-        width: 100%;
-        margin-top: 1rem;
-        padding-left: 0;
-    }
-
-
     /* Servicios */
     
     .service{
@@ -388,70 +347,6 @@
         right: 31.5%;
     }
 
-     /* footer */
-    .footer-width{
-        width: 98% !important;
-        flex-direction: column;
-    }
-    .derecho p {
-        margin: 4rem 0;
-        text-align: center;
-    }
-    .ilumination-footer{
-        width: 50%;
-    }
-
 }
 
 
-@media screen and (min-width: 991px) and (max-width: 1300px){
-
-    /* Banner */
-    .banner{
-        height: 38vh;
-    }
-    .img-banner img{
-        width: 450px;
-        height: 35vh;
-    }
-    .servicios .title h1{
-        width: 40%;
-    }
-    .block-service{
-        width: 40%;
-    }
-    .ilumination{
-        height: 45vh;
-    }
-    .img-banner{
-        width: 43%;
-    }
-    .title-banner{
-        width: 45%;
-        line-height: 40px;
-        margin: 0;
-    }
-    .img-inf-nosotros p, .img-inf-nosotros h4, 
-    .img-inf-nosotros .pregunta{
-        width: 100%;
-    }
-    .img-nosotros img{
-        margin: 3rem;
-    }
-
-    .includ-service{
-        justify-content: space-around;
-    }
-
-     /* Footer */
-     .footer-inf{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4rem;
-    }
-    .footer-width, .width-rs{
-        width: 40% !important;
-    }
-}
