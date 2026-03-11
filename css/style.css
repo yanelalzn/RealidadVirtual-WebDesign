@@ -210,14 +210,6 @@ nav{
     background-size: contain;
     vertical-align: middle;
 }
-.sparks {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: url(../img/peligro.png) no-repeat center;
-    background-size: contain;
-    vertical-align: middle;
-}
 .title-banner h2{
     font-size: 20px;
 }
@@ -1121,9 +1113,13 @@ footer{
         0 0 20px #A100FF,
         0 0 30px #A100FF;
 }
+.derecho{
+    display: flex;
+    justify-content: space-between;
+}
 .derecho p{
     color: white;
-    margin: 4rem 0 2rem 4.5rem;
+    margin: 4rem 0 2rem;
 }
 .ilumination-footer {
     position: absolute;
@@ -1146,7 +1142,7 @@ footer{
 /* ========== WHATSAPP FLOAT ========== */
 .whatsapp-float{
     position: fixed;
-    bottom: 18px;
+    bottom: 25px;
     right: 1.2rem;
     width: 55px;
     height: 55px;
@@ -2191,5 +2187,11 @@ section{
 @media screen and (min-width: 991px) and (max-width: 1300px){
     .img-inf-nosotros p, .img-inf-nosotros h4, .img-inf-nosotros .pregunta {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1027px) and (max-width: 1200px){
+    .img-banner img {
+        height: auto;
     }
 }
