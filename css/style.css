@@ -196,6 +196,18 @@ nav{
     background-repeat: no-repeat;
     background-size: 109% 104%;
 }
+.banner-event{
+    width: 97%;
+    height: auto;
+    border-radius: 0 0 40px 40px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+    background-image: url(../img/banner-event.png);
+    background-repeat: no-repeat;
+}
 .title-banner{
     width: 40%;
     line-height: 40px;
@@ -1985,7 +1997,7 @@ hr{
 .inf-nosotros{
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
+    margin-block: 5rem 1rem;
     position: relative;
     align-items: center;
 }
@@ -2014,6 +2026,7 @@ hr{
     color: white;
     margin-bottom: 1rem;
     font-size: 24px;
+    text-align: center;
 }
 .img-inf-nosotros .pregunta{
     text-align: center;

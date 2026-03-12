@@ -103,10 +103,26 @@ sr.reveal(".whatsapp-container", { delay: 150, scale: 0.6, opacity: 0, interval:
 /* ---------- NOSOTROS ---------- */
 sr.reveal(".nosotros-h4", { delay: 150, origin: "bottom", distance: "80px" });
 sr.reveal(".pregunta", { delay: 200, origin: "bottom", distance: "80px" });
-sr.reveal(".nosotros-p", { delay: 250, origin: "bottom", distance: "80px" });
-sr.reveal(".img-nosotros", { delay: 200, scale: 0.8 });
 sr.reveal(".title-vm-nosotros", { delay: 200, origin: "left", distance: "50px" });
 sr.reveal(".mision, .vision", { delay: 250, origin: "bottom", distance: "80px", interval: 100 });
+
+sr.reveal(".img-nosotros", { delay: 200, scale: 0.8 });
+sr.reveal(".nosotros-p", { delay: 250, origin: "bottom", distance: "80px" });
+sr.reveal(".beneficios h2", { delay: 300, origin: "bottom", distance: "80px" });
+sr.reveal(".beneficios-container", { delay: 320, origin: "bottom", distance: "80px" });
+sr.reveal(".vr-section", { delay: 350, origin: "bottom", distance: "80px" });
+sr.reveal(".sectores-container", { delay: 350, origin: "bottom", distance: "80px" });
+
+sr.reveal(".beneficios-content h2", { delay: 350, origin: "bottom", distance: "80px" });
+
+sr.reveal(".lista-beneficios li:nth-child(1)", { delay: 360, origin: "bottom", distance: "80px" });
+sr.reveal(".lista-beneficios li:nth-child(2)", { delay: 380, origin: "bottom", distance: "80px" });
+sr.reveal(".lista-beneficios li:nth-child(3)", { delay: 400, origin: "bottom", distance: "80px" });
+sr.reveal(".lista-beneficios li:nth-child(4)", { delay: 420, origin: "bottom", distance: "80px" });
+sr.reveal(".lista-beneficios li:nth-child(5)", { delay: 440, origin: "bottom", distance: "80px" });
+
+sr.reveal(".proceso-container", { delay: 350, origin: "bottom", distance: "80px" });
+
 
 /* ---------- CONTACTO ---------- */
 sr.reveal(".icon-contacto", { delay: 600, origin: "top", distance: "60px", duration: 400 });
