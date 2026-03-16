@@ -48,7 +48,7 @@ header{
     background-color: #0a092a !important;
 } */
 .logo-header img{
-    width: 130px;
+    width: 118px;
     height: 110px;
     cursor: pointer;
 }
@@ -170,7 +170,6 @@ header{
     color: white;
 }
 .logo-header img{
-    width: 140px;
     transition: 0.3s ease;
 }
 .logo-small{
@@ -312,7 +311,7 @@ nav{
 .button-banner{
     display: flex;
     gap: 1rem;
-    margin: 1rem 0;
+    margin: 20px 0;
 }
 .boton_cont{
     padding: 12px 25px !important;
@@ -912,12 +911,12 @@ nav{
     text-align: center;
     width: 22%;
 }
-.bx-calendar, .bxs-joystick{
+.bx-calendar, .bxs-joystick, .ri-emotion-fill{
     font-size: 50px;
-    color: var(--color-lightblue);
+    color: #00FFCC;
 }
-.bx-calendar, .bxs-joystick, .img-face{
-    margin: 0 0 1rem 0;
+.icon-inf p{
+    margin: 1rem 0 0 0 !important;
 }
 .icon-inf p{
     color: white;
@@ -1131,7 +1130,8 @@ footer{
 }
 .derecho p{
     color: white;
-    margin: 4rem 0 2rem;
+    margin: 4rem 1.5rem 2rem;
+    font-size: 14px;
 }
 .ilumination-footer {
     position: absolute;
@@ -1154,7 +1154,7 @@ footer{
 /* ========== WHATSAPP FLOAT ========== */
 .whatsapp-float{
     position: fixed;
-    bottom: 25px;
+    bottom: 2rem;
     right: 1.2rem;
     width: 55px;
     height: 55px;
@@ -1182,7 +1182,7 @@ footer{
 /*--=============== SCROLL UP ===============*/
 .scrollup{
     position: fixed;
-    left: 1.5rem;
+    right: 2rem;
     bottom: -40%;
     background-color: white;
     box-shadow: 0 8px 16px hsla(0, 0%, 0%, .1);
@@ -1200,7 +1200,7 @@ footer{
 
 /* Show-scroll */
 .show-scroll{
-    bottom: 2.5rem;
+    bottom: 6.5rem;
 }
 
 @media(max-width:576px){
@@ -1769,10 +1769,7 @@ footer{
     font-size: 30px;
 }
 .icon-contacto-p1{
-    background: linear-gradient(to bottom right, #008cff, #e100ff);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #00FFCC;
     font-weight: 500;
     width: 20%;
     font-size: 18px;
@@ -2030,7 +2027,7 @@ hr{
 }
 .img-inf-nosotros .pregunta{
     text-align: center;
-    color: #008cff;
+    color: #00FFCC;
     font-size: 22px;
     margin-bottom: 1rem;
     padding-right: 3rem;
@@ -2066,7 +2063,7 @@ section{
     text-transform: uppercase;
 }
 .mision img, .vision img, .objetivo img{
-    border: 2px solid var(--color-lightblue);
+    border: 2px solid #00FFCC;
     border-radius: 100%;
     padding: 1rem;
 }
