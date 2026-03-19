@@ -528,7 +528,7 @@ nav{
 .servicios .title{
     display: flex;
     justify-content: center;
-    margin: 5rem 0;
+    margin: 4rem 0;
 }
 .servicios .title h1{
     color: white;
@@ -985,7 +985,7 @@ nav{
     margin: 5rem 0;
 }
 .contact-inf-card{
-    background-image: linear-gradient(to bottom right, #311c66, #0f1845);
+    background-image: linear-gradient(to bottom right, #311c66, #0c1842);
     color: white;
     padding: 2rem 0 4rem 0;
     width: 95%;
@@ -1388,17 +1388,6 @@ footer{
         right: 1.5rem;
     }
 }
-@media (max-width: 1000px){
-    .nav__toggle {
-        display: block;
-    }
-    .boton{
-        display: none;
-    }
-    .menu-horizontal{
-        display: none;
-    }
-}
 @media (max-width: 768px){
 
     .banner{
@@ -1446,39 +1435,11 @@ footer{
     }
 }
 
-@media(max-width:919px){
+@media(max-width:1000px){
 
     /* header */
     header{
         padding: 0 2rem;
-    }
-    .menu-icono{
-        display: block;
-    }
-    #menu:checked ~ .list-right{
-        display: initial;
-    }
-    .list-header{
-        display: none;
-    }
-    .list-right {
-        position: absolute;
-        top: 70%;
-        left: 0;
-        right: 0;
-        background-color: #323337;
-        display: none;
-    }
-    header label{
-        display: block;
-    }
-    .list-header{
-        position: absolute;
-        top: 70%;
-        left: 0;
-        right: 0;
-        background-color: #23005b;
-        display: none;
     }
     .menu-horizontal{
         flex-direction: column;
@@ -1565,9 +1526,6 @@ footer{
     .questions-container{
         margin: 0 1rem;
     }
-    .button-header{
-        display: none;
-    }
     .title__pricing h1{
         font-size: 33px;
     }
@@ -1598,6 +1556,7 @@ footer{
     .bols .bolita:nth-child(1){
         top: 30%;
     }
+    
 }
 @media screen and (min-width: 576px) and (max-width: 1000px){
 
@@ -1685,6 +1644,7 @@ footer{
         justify-self: center;
         width: 50%;
     }
+    
 }
 
 @media screen and (min-width: 576px) and (max-width: 865px){
@@ -1783,6 +1743,9 @@ footer{
         grid-column: 1 / -1;
         justify-self: center;
         width: 50%;
+    }
+    .blocks {
+        gap: 2rem;
     }
 }
 

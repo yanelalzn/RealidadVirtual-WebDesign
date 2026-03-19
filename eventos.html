@@ -16,7 +16,7 @@
     <title>Eventos Gamer | Zago VR</title>
 </head>
 <body>
-        <header class="header" id="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <!-- LOGO -->
             <div class="logo-header">
@@ -37,7 +37,7 @@
                 <!-- BOTÓN -->
                 <div class="button-header">
                     <button class="boton">
-                        <a href="#contacto"><i class='bx bx-phone'></i> Haz tu reserva</a>
+                        <a href="contacto.html#contacto-pos"><i class='bx bx-phone'></i> Haz tu reserva</a>
                     </button>
                 </div>
                 <!-- CLOSE -->
@@ -84,7 +84,7 @@
                     <button class="ilumination-button-one width-ilumi-second"></button>
                     <button class="ilumination-button-one width-ilumi-thirty"></button>                    
                 </div>
-                <img src="img/zaggy-home.png" alt="Zaggy-mascota">
+                <img src="img/zaggy-evento-1.png" alt="Zaggy-mascota">
             </div>
             <div class="redes-sociales">
                 <ul>
@@ -111,6 +111,102 @@
             </div>
         </section>
     </nav>
+    <section class="evx-section">
+        <h2 class="evx-title">
+            Creamos experiencias inmersivas <br>
+            para <span class="evx-highlight">todo tipo de Eventos</span>
+        </h2>
+
+        <div class="evx-wrapper">
+
+            <div class="evx-card">
+                <div class="evx-img-wrap">
+                    <img src="img/event-6.png" alt="Corporativos">
+                </div>
+                <div class="content-card-rgt">
+                    <h3 class="evx-card-title">Corporativos</h3>
+                    <p class="evx-card-text">Capacitaciones, team buildings</p>
+                </div>
+            </div>
+
+            <div class="evx-card">
+                <div class="evx-img-wrap">
+                    <img src="img/event-5.png" alt="Experiencias Gamer">
+                </div>
+                <div class="content-card-rgt">
+                    <h3 class="evx-card-title">Experiencias Gamer</h3>
+                    <p class="evx-card-text">Entretenimiento con videojuegos</p>
+                </div>
+            </div>
+
+            <div class="evx-card">
+                <div class="evx-img-wrap">
+                    <img src="img/event-4.png" alt="Ferias y Exposiciones">
+                </div>
+                <div class="content-card-rgt">
+                    <h3 class="evx-card-title">Ferias y Exposiciones</h3>
+                    <p class="evx-card-text">Ferias comerciales y Exhibiciones</p>
+                </div>
+            </div>
+
+            <div class="evx-card">
+                <div class="evx-img-wrap">
+                    <img src="img/event-3.png" alt="Lanzamiento de productos">
+                </div>
+                <div class="content-card-rgt">
+                    <h3 class="evx-card-title">Lanzamiento de productos</h3>
+                    <p class="evx-card-text">Lanzamientos innovadores</p>
+                </div>
+            </div>
+
+            <div class="evx-card">
+                <div class="evx-img-wrap">
+                    <img src="img/event-2.png" alt="Activaciones de Marcas">
+                </div>
+                <div class="content-card-rgt">
+                    <h3 class="evx-card-title">Activaciones de Marcas</h3>
+                    <p class="evx-card-text">Experiencias de marca</p>
+                </div>
+            </div>
+
+            <div class="evx-card">
+                <div class="evx-img-wrap">
+                    <img src="img/event-1.png" alt="Eventos Privados">
+                </div>
+                <div class="content-card-rgt">
+                    <h3 class="evx-card-title">Eventos Privados</h3>
+                    <p class="evx-card-text">Fiestas, celebraciones</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="servicios evx-gallery-section" id="servicios">
+        <div class="title">
+            <h1 class="linea-title">Un vistazo a nuestras experiencias</h1>
+        </div>
+        <div class="evx-gallery-wrapper">
+            <div class="evx-gallery-card">
+                <img src="img/justdance.jpeg" alt="">
+            </div>
+            <div class="evx-gallery-card">
+                <img src="img/karaoke.jpg" alt="">
+            </div>
+            <div class="evx-gallery-card">
+                <img src="img/pg-nosotros.jpg" alt="">
+            </div>
+            <div class="evx-gallery-card">
+                <img src="img/playstation.jpeg" alt="">
+            </div>
+            <div class="evx-gallery-card">
+                <img src="img/simulador.jpeg" alt="">
+            </div>
+            <div class="evx-gallery-card">
+                <img src="img/realidadvirtual.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
     <footer id="footer">
         <div class="footer-inf">
             <div class="one-file footer-width">
@@ -196,5 +292,51 @@
         <img src="img/whatsApps.png" alt="WhatsApp">
     </a>
     <script src="js/scrollreveal.min.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll('.evx-card');
+
+    cards.forEach(card => {
+
+        const imgWrap = card.querySelector('.evx-img-wrap');
+        if (!imgWrap) return;
+
+        card.addEventListener('mouseenter', () => {
+            createExplosion(imgWrap);
+        });
+
+    });
+
+    function createExplosion(container) {
+        const rect = container.getBoundingClientRect();
+
+        const xStart = rect.width / 2;
+        const yStart = rect.height / 2;
+
+        for (let i = 0; i < 14; i++) {
+            const particle = document.createElement('span');
+            particle.classList.add('evx-particle');
+
+            particle.style.left = xStart + 'px';
+            particle.style.top = yStart + 'px';
+
+            const angle = Math.random() * 2 * Math.PI;
+            const distance = Math.random() * 60 + 20;
+
+            const x = Math.cos(angle) * distance + 'px';
+            const y = Math.sin(angle) * distance + 'px';
+
+            particle.style.setProperty('--x', x);
+            particle.style.setProperty('--y', y);
+
+            container.appendChild(particle);
+
+            setTimeout(() => particle.remove(), 800);
+        }
+    }
+
+});
+</script>
 </body>
 </html>

@@ -124,6 +124,14 @@ sr.reveal(".lista-beneficios li:nth-child(5)", { delay: 440, origin: "bottom", d
 sr.reveal(".proceso-container", { delay: 350, origin: "bottom", distance: "80px" });
 
 
+sr.reveal(".lista-beneficios li:nth-child(1)", { delay: 360, origin: "bottom", distance: "80px" });
+
+/* ---------- EVENTO ---------- */
+sr.reveal(".evx-title", { delay: 360, origin: "bottom", distance: "80px" });
+sr.reveal(".evx-wrapper", { delay: 380, origin: "bottom", distance: "80px" });
+
+sr.reveal(".evx-gallery-wrapper", { delay: 380, origin: "bottom", distance: "80px" });
+
 /* ---------- CONTACTO ---------- */
 sr.reveal(".icon-contacto", { delay: 600, origin: "top", distance: "60px", duration: 400 });
 sr.reveal(".formulario-contacto", { delay: 600, origin: "bottom", distance: "80px" });
