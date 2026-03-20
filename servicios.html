@@ -261,5 +261,37 @@
         <img src="img/whatsApps.png" alt="WhatsApp">
     </a>
     <script src="js/scrollreveal.min.js"></script>
+    <script>
+        let lastScroll = 0;
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", () => {
+            let currentScroll = window.pageYOffset;
+
+            // SCROLL ABAJO → ocultar
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.classList.add("header-hide");
+            } else {
+                // SCROLL ARRIBA → mostrar
+                header.classList.remove("header-hide");
+
+                // 👇 cuando aparece → más pequeño
+                if (currentScroll > 50) {
+                    header.classList.add("header-small");
+                } else {
+                    header.classList.remove("header-small");
+                }
+            }
+
+            // fondo
+            if (currentScroll > 50) {
+                header.classList.add("header-bg");
+            } else {
+                header.classList.remove("header-bg");
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
 </body>
 </html>
