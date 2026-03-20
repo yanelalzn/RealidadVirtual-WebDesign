@@ -27,6 +27,9 @@ a{
 }
 
 /* Header */
+body{
+    padding-top: 115px;
+}
 #home{
     scroll-margin-top: 115px; /* altura de tu header */
 }
@@ -44,6 +47,28 @@ header{
     padding: 0 5rem;
     z-index: 1000;
 }
+header{
+    transition: transform 0.3s ease, height 0.3s ease;
+}
+
+/* ocultar header */
+.header-hide{
+    transform: translateY(-80%);
+}
+.header-bg{
+    background-color: #000c4bc9;
+    backdrop-filter: blur(10px);
+}
+/* header pequeño */
+.header-small{
+    height: 80px;
+}
+
+.header-small .logo-header img{
+    width: 90px;
+    height: auto;
+}
+
 /* header, nav{
     background-color: #0a092a !important;
 } */
@@ -142,6 +167,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 80px;
 }
 .nav__toggle {
     display: none;
@@ -181,7 +207,6 @@ nav{
     display: flex;
     justify-content: center;
     position: relative;
-    margin-top: 6rem;
 }
 .banner{
     width: 97%;
@@ -1131,12 +1156,27 @@ footer{
         0 0 30px #A100FF;
 }
 .derecho{
+    background-color: #0000002f;
+}
+.right-copy-marg{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+}
+.right-copy-marg p > span {
+    text-decoration: underline !important;
+    transition: all 0.3s ease;
+}
+.right-copy-marg p > span a{
+    transition: all 0.3s ease;
+}
+.right-copy-marg p > span:hover,
+.right-copy-marg p > span a:hover{
+    color: #00FFCC;
 }
 .derecho p{
     color: white;
-    margin: 4rem 1.5rem 2rem;
+    margin: 1rem 1.5rem 1rem;
     font-size: 14px;
 }
 .ilumination-footer {
@@ -1160,7 +1200,7 @@ footer{
 /* ========== WHATSAPP FLOAT ========== */
 .whatsapp-float{
     position: fixed;
-    bottom: 2rem;
+    bottom: 4rem;
     right: 1.2rem;
     width: 55px;
     height: 55px;
@@ -1183,30 +1223,6 @@ footer{
 .wsp-message.show{
     opacity: 1;
     transform: translateY(0);
-}
-
-/*--=============== SCROLL UP ===============*/
-.scrollup{
-    position: fixed;
-    right: 2rem;
-    bottom: -40%;
-    background-color: white;
-    box-shadow: 0 8px 16px hsla(0, 0%, 0%, .1);
-    color: black;
-    display: inline-flex;
-    padding: 6px;
-    font-size: 1.25rem;
-    border-radius: .25rem;
-    z-index: 100;
-    transition: bottom .4s, transform .4s, background-color .4s;
-}
-.scrollup:hover{
-    transform: translateY(-.5rem);
-}
-
-/* Show-scroll */
-.show-scroll{
-    bottom: 6.5rem;
 }
 
 @media(max-width: 576px){
@@ -1383,9 +1399,6 @@ footer{
     }
     .show-scroll {
         bottom: 5rem;
-    }
-    .scrollup {
-        right: 1.5rem;
     }
 }
 @media (max-width: 768px){

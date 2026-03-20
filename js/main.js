@@ -19,18 +19,6 @@ navLinks.forEach(link => {
     })
 })
 
-window.addEventListener('scroll', () => {
-    let scroll = window.scrollY
-
-    if (scroll > 50) {
-        header.style.backgroundColor = '#000c4bc9'
-        logo.classList.add('logo-small')
-    } else {
-        header.style.backgroundColor = 'transparent'
-        logo.classList.remove('logo-small')
-    }
-})
-
 // Menu list
 const serviciosBtn = document.querySelector('.menu-horizontal > li:nth-child(3) > a');
 const submenu = document.querySelector('.menu-horizontal > li:nth-child(3) .menu-vertical');
@@ -179,3 +167,4 @@ const wspMessage = document.getElementById("wsp-message");
             wspMessage.classList.remove("show");
         }
     });
+
