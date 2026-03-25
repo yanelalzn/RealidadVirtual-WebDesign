@@ -51,66 +51,19 @@
         </nav>
     </header>
     <nav>
-        <section class="banner flex" id="home">
-            <div class="title-banner">
-                <h2 class="tagline">
-                    <span class="spark spark-left"></span>
-                    Zago Entertainment - Servicios
-                    <span class="spark spark-right"></span>
-                </h2>
-                <p class="title-second">Servicios Gamer</p>
-                <p class="title-second">y Realidad Virtual</p>
-                <p class="title-third">Experiencias interactivas con realidad virtual, simuladores y videojuegos para eventos, con instalación y soporte técnico profesional.</p>
-                <ul class="benefits">
-                    <li><i class="ri-check-line"></i> Realidad Virtual</li>
-                    <li><i class="ri-check-line"></i> Simulador de Autos</li>
-                    <li><i class="ri-check-line"></i> Just Dance / Nintendo Switch, etc.</li>
-                </ul>
-                <p class="social-proof">
-                    <i class="ri-star-s-line"></i> Más de 500 eventos realizados 🎉<br>
-                </p>
-                <div class="button-banner">
-                    <button class="boton-contacto"><a href="https://wa.me/51943100468?text=Hola%20👋%20estoy%20interesado(a)%20en%20contratar%20una%20experiencia%20de%20videojuegos%20o%20realidad%20virtual%20para%20un%20evento.%20¿Podrían%20enviarme%20información%20y%20disponibilidad?" target="_blank"><i class="fab fa-whatsapp"></i>  Contactanos</a></button>
-                    <div class="button-header">
-                        <button class="boton boton_cont">
-                            <a href="servicios/playStation5.html#aventuras">Aventuras <i class='bx bx-right-arrow-alt bx-fade-right'></i></a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="img-banner">
-                <div class="ilumination">
-                    <button class="ilumination-button width-ilumi"></button>
-                    <button class="ilumination-button-one width-ilumi-one"></button>
-                    <button class="ilumination-button-one width-ilumi-second"></button>
-                    <button class="ilumination-button-one width-ilumi-thirty"></button>                    
-                </div>
-                <img src="img/zaggy-home.png" alt="Zaggy-mascota">
-            </div>
-            <div class="redes-sociales">
-                <ul>
-                    <li>
-                        <a href="https://web.facebook.com/zagovr" target="_blank">
-                            <img src="img/facebook.png" alt="facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/zago_vr/" target="_blank">
-                            <img src="img/social.png" alt="instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@zago.vr" target="_blank">
-                            <img src="img/tik-tok.png" alt="tiktok">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ilumination-title">
-                    <button class="ilumination-button width-ilum"></button>
-                    <button class="ilumination-button-one width-ilum-one"></button>
-            </div>
-        </section>
+        <div class="banner banner-exc flex" id="home">
+            <svg viewBox="0 0 1000 200" class="title-svg">
+                <defs>
+                <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#a855f7"/>
+                    <stop offset="100%" stop-color="#38bdf8"/>
+                </linearGradient>
+                </defs>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+                SERVICIOS
+                </text>
+            </svg>
+        </div>
     </nav>
     <section class="servicios container" id="servicios" style="margin-bottom: 5rem;">
         <div class="title">
@@ -233,7 +186,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/zagovrentertainment/" target="_blank">
+                        <a href="https://www.instagram.com/zago_vr/" target="_blank">
                             <i class='bx bxl-instagram'></i>
                         </a>
                     </li>
@@ -261,37 +214,5 @@
         <img src="img/whatsApps.png" alt="WhatsApp">
     </a>
     <script src="js/scrollreveal.min.js"></script>
-    <script>
-        let lastScroll = 0;
-        const header = document.querySelector("header");
-
-        window.addEventListener("scroll", () => {
-            let currentScroll = window.pageYOffset;
-
-            // SCROLL ABAJO → ocultar
-            if (currentScroll > lastScroll && currentScroll > 100) {
-                header.classList.add("header-hide");
-            } else {
-                // SCROLL ARRIBA → mostrar
-                header.classList.remove("header-hide");
-
-                // 👇 cuando aparece → más pequeño
-                if (currentScroll > 50) {
-                    header.classList.add("header-small");
-                } else {
-                    header.classList.remove("header-small");
-                }
-            }
-
-            // fondo
-            if (currentScroll > 50) {
-                header.classList.add("header-bg");
-            } else {
-                header.classList.remove("header-bg");
-            }
-
-            lastScroll = currentScroll;
-        });
-    </script>
 </body>
 </html>

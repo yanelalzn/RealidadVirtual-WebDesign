@@ -53,7 +53,7 @@ header{
 
 /* ocultar header */
 .header-hide{
-    transform: translateY(-80%);
+    transform: translateY(-100%);
 }
 .header-bg{
     background-color: #000c4bc9;
@@ -167,7 +167,7 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 100%;
 }
 .nav__toggle {
     display: none;
@@ -220,23 +220,49 @@ nav{
     background-repeat: no-repeat;
     background-size: 109% 104%;
 }
-.banner-event{
-    width: 97%;
-    height: 82vh;
-    border-radius: 0 0 40px 40px;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    background-size: 100%;
-    background-image: url(../img/banner-event.png);
-    background-repeat: no-repeat;
-}
 .title-banner{
     width: 40%;
     line-height: 40px;
     margin: 0 0 1rem 6rem;
     z-index: 10;
+}
+.banner-exc{
+    width: 97%;
+    height: 32vh;
+    border-radius: 0 0 40px 40px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-image: url(../img/banner-exc.png);
+    background-repeat: no-repeat;
+}
+.title-svg text {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+    fill: transparent;
+    stroke: url(#gradiente);
+    stroke-width: 3;
+    letter-spacing: 2px;
+    filter: drop-shadow(0 0 4px rgba(168, 85, 247, 0.5));
+}
+
+/* ANIMACIÓN REAL EN EL BORDE */
+.banner-exc text {
+    animation: glows 2s ease-in-out infinite alternate;
+}
+
+@keyframes glows {
+    from {
+        filter: drop-shadow(0 0 3px rgba(168, 85, 247, 0.25))
+                drop-shadow(0 0 6px rgba(168, 85, 247, 0.25));
+    }
+    to {
+        filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.4))
+                drop-shadow(0 0 10px rgba(56, 189, 248, 0.4));
+    }
 }
 .spark {
     display: inline-block;
@@ -553,7 +579,7 @@ nav{
 .servicios .title{
     display: flex;
     justify-content: center;
-    margin: 4rem 0;
+    margin: 1rem 0 4rem;
 }
 .servicios .title h1{
     color: white;
@@ -1401,26 +1427,24 @@ footer{
         bottom: 5rem;
     }
 }
-@media (max-width: 768px){
 
+@media (max-width: 768px){
     .banner{
         height: 100vh;
-        background-image: url(../img/banner-fondo-mobile.jpg);
+        background-image: url(../img/banner-fondo-mobile-2.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom;
     }
-    .banner-event{
-        width: 97%;
-        height: 82vh;
-        border-radius: 0 0 40px 40px;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-        background-size: 100%;
-        background-image: url(../img/banner-event.png);
+    .banner-exc{
+        height: 26vh !important;
+        background-image: url(../img/banner-exc.png);
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .title-svg text{
+        font-size: 80px;
     }
     .img-banner {
         width: 100%;
@@ -1434,15 +1458,22 @@ footer{
         margin: 20px 0;
     }
 }
-@media (min-width: 769px) and (max-width: 1024px){
 
+@media (min-width: 769px) and (max-width: 1024px){
     .banner{
-        background-image: url(../img/banner-fondo-mobile.jpg);
+        background-image: url(../img/banner-fondo-mobile-2.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-     .img-banner img{
+    .banner-exc{
+        height: 26vh !important;
+        background-image: url(../img/banner-exc.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    .img-banner img{
         width: 90%;
         max-width: 420px;
     }
@@ -1503,6 +1534,9 @@ footer{
         text-align: center;
         height: auto;
     }
+    .banner-exc{
+        height: 25vh;
+    }
     .title-banner{
         margin: 0;
         width: 92%;
@@ -1546,6 +1580,9 @@ footer{
         gap: 2rem;
     }
     .ilumination-button, .ilumination-button-one{
+        display: none;
+    }
+    .button-header{
         display: none;
     }
 }
@@ -1592,6 +1629,9 @@ footer{
     }
     .icon-inf p{
         font-size: 15px;
+    }
+    .title-svg text {
+        font-size: 80px;
     }
     
     /* VideoJuegos */
@@ -1678,12 +1718,27 @@ footer{
     .mision, .vision, .objetivo {
         width: 60% !important;
     }
+    .banner {
+        height: auto;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px){
+    .banner {
+        height: 600px;
+    }
+    .banner-exc {
+        width: 97%;
+        height: 32vh;
+    }
 }
 @media screen and (min-width: 865px) and (max-width: 1200px){
 
     /* Banner */
     .banner{
         height: 600px;
+    }
+    .banner-exc{
+        height: 300px;
     }
     .block-service{
         width: 40%;
@@ -1709,6 +1764,9 @@ footer{
     }
     .mision, .vision, .objetivo {
         width: 50% !important;
+    }
+    .title-svg text {
+        font-size: 80px;
     }
 
     /* VideoJuegos */
@@ -1771,7 +1829,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 5rem 0;
+    margin: 2rem 0;
     scroll-margin-top: 10rem;
 }
 .icon-cont{

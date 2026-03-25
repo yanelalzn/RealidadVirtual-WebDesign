@@ -1,34 +1,53 @@
-const navMenu = document.getElementById('nav-menu')
-const navToggle = document.getElementById('nav-toggle')
-const navClose = document.getElementById('nav-close')
-const navLinks = document.querySelectorAll('.nav__link')
-const header = document.getElementById('header')
-const logo = document.querySelector('.logo-header img')
+document.addEventListener("DOMContentLoaded", () => {
 
-navToggle.addEventListener('click', () => {
-    navMenu.classList.add('show-menu')
-})
+    let lastScroll = 0;
 
-navClose.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu')
-})
+    const navMenu = document.getElementById('nav-menu')
+    const navToggle = document.getElementById('nav-toggle')
+    const navClose = document.getElementById('nav-close')
+    const navLinks = document.querySelectorAll('.nav__link')
+    const header = document.getElementById('header')
+    const logo = document.querySelector('.logo-header img')
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    // VALIDACIÓN (evita errores)
+    if (!navMenu || !navToggle || !navClose || !header) return;
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
-})
 
-window.addEventListener('scroll', () => {
-    let scroll = window.scrollY
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu')
+        })
+    })
 
-    if (scroll > 50) {
-        header.style.backgroundColor = '#000c4bc9'
-        logo.classList.add('logo-small')
-    } else {
-        header.style.backgroundColor = 'transparent'
-        logo.classList.remove('logo-small')
-    }
+    window.addEventListener('scroll', () => {
+        let currentScroll = window.scrollY;
+
+        // ocultar / mostrar
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            header.classList.add("header-hide");
+        } else {
+            header.classList.remove("header-hide");
+        }
+
+        // tamaño + fondo
+        if (currentScroll > 50) {
+            header.classList.add("header-small");
+            header.classList.add("header-bg");
+        } else {
+            header.classList.remove("header-small");
+            header.classList.remove("header-bg");
+        }
+
+        lastScroll = currentScroll;
+    });
+
 })
 
 // Menu list
