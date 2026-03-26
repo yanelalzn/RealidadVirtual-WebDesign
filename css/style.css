@@ -1,12 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500&family=Manrope:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@font-face{
+   font-family:"dincond-bold";
+    src: url('../font/Jaro/static/Jaro_60pt-Regular.ttf') format('truetype');
+}
+@font-face{
+   font-family: "BaiCustom";
+   src: url('../font/Bai_Jamjuree/BaiJamjuree-Regular.ttf') format('truetype');
+   font-weight: 200;
+   font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Bai Jamjuree", serif;
+}
+body{
+   font-family: "BaiCustom", sans-serif;
+   font-weight: 200;
+    background-color: var(--primary-color);
 }
 :root{
     --primary-color: #0c1842;
@@ -14,9 +27,6 @@
     --color-green: #10B534;
     --color-grey: #A1A4A5;
     --max-width: 1440px;
-}
-body{
-    background-color: var(--primary-color);
 }
 a{
     color: white;
@@ -65,8 +75,8 @@ header{
 }
 
 .header-small .logo-header img{
-    width: 90px;
-    height: auto;
+    width: 100px;
+    height: 90px;
 }
 
 /* header, nav{
@@ -131,7 +141,6 @@ header{
     padding: 0.7em 1em;
     background-color: var(--primary-color);
     border: none;
-    font-size: 15px;
     text-transform: uppercase;
     border-radius: 1000px;
     position: relative;
@@ -210,7 +219,7 @@ nav{
 }
 .banner{
     width: 97%;
-    height: 82vh;
+    height: 80vh;
     border-radius: 0 0 40px 40px;
     justify-content: space-around;
     align-items: center;
@@ -228,12 +237,13 @@ nav{
 }
 .banner-exc{
     width: 97%;
-    height: 32vh;
+    height: 32svh;
+    min-height: 140px;
     border-radius: 0 0 40px 40px;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     background-size: 100% 100%;
     background-image: url(../img/banner-exc.png);
     background-repeat: no-repeat;
@@ -242,7 +252,7 @@ nav{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Orbitron', sans-serif;
-    fill: transparent;
+    fill: rgba(255,255,255,0.01); /* 👈 truco */
     stroke: url(#gradiente);
     stroke-width: 3;
     letter-spacing: 2px;
@@ -691,9 +701,8 @@ nav{
     font-size: 90px;
     font-family: "Jaro", serif;
     color: white;
-    letter-spacing: 5px;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 900;
 }
 .second-file .umber{
     font-size: 30px;
@@ -841,7 +850,7 @@ nav{
 .title__pricing{
     display: flex;
     justify-content: center;
-    margin: 5rem 0;
+    margin: 2rem 0;
 }
 .title__pricing h1{
     color: white;
@@ -948,7 +957,7 @@ nav{
 .divertion-family .title-inf{
     display: flex;
     justify-content: center;
-    margin: 5rem 0;
+    margin: 5rem 0 2rem;
 }
 .divertion-family .title-inf h1{
     color: white;
@@ -968,7 +977,7 @@ nav{
     text-align: center;
     width: 22%;
 }
-.bx-calendar, .bxs-joystick, .ri-emotion-fill{
+.bx-calendar, .ri-emotion-fill, .bxs-joystick{
     font-size: 50px;
     color: #00FFCC;
 }
@@ -1018,7 +1027,7 @@ nav{
 }
 .question p.show{
     color: white;
-    max-height: 250px; 
+    max-height: max-content;
     opacity: 1;
     padding:0px 15px 30px 15px;
 }
@@ -1236,15 +1245,34 @@ footer{
     z-index: 999;
     transition: transform .3s ease, box-shadow .3s ease;
 }
-/*--=============== WHATSAPP ===============*/
-
 .whatsapp-float img{
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 30%;
 }
+/* TEXTO DEL BOTÓN */
+.whatsapp-text{
+    position: absolute;
+    right: 65px;
+    background: #fff;
+    color: #10B534;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all .3s ease;
+    pointer-events: none;
+    font-weight: 600;
+}
 
+/* Mostrar texto al pasar el mouse */
+.whatsapp-float:hover .whatsapp-text{
+    opacity: 1;
+    transform: scale(1.05);
+}
 /* cuando se activa */
 .wsp-message.show{
     opacity: 1;
@@ -1252,6 +1280,17 @@ footer{
 }
 
 @media(max-width: 576px){
+    /* Header */
+    body {
+        padding-top: 90px;
+    }
+    header{
+        height: 90px;
+    }
+    .logo-header img {
+        width: 100px;
+        height: 90px;
+    }
     /* Servicios */
     .servicios, .videojuegos, .divertion-family{
         padding: 2rem 0;
@@ -1386,12 +1425,17 @@ footer{
         text-align: center;
     }
     .derecho{
-        margin: 1.5rem 0;
         flex-direction: column;
     }
     .derecho p {
         margin-top: 20px !important;
         margin: 0;
+    }
+    .right-copy-marg{
+        flex-direction: column;
+    }
+    .right-copy-marg p:nth-child(2){
+        margin-bottom: 20px;
     }
 
     /* Banner */
@@ -1427,6 +1471,11 @@ footer{
         bottom: 5rem;
     }
 }
+@media (max-width: 767px){
+    .title-svg text{
+        font-size: 120px !important;
+    }
+}
 
 @media (max-width: 768px){
     .banner{
@@ -1437,7 +1486,7 @@ footer{
         background-position: center bottom;
     }
     .banner-exc{
-        height: 26vh !important;
+        height: 26svh !important;
         background-image: url(../img/banner-exc.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -1467,7 +1516,7 @@ footer{
         background-repeat: no-repeat;
     }
     .banner-exc{
-        height: 26vh !important;
+        height: 26svh !important;
         background-image: url(../img/banner-exc.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -1535,7 +1584,7 @@ footer{
         height: auto;
     }
     .banner-exc{
-        height: 25vh;
+        height: 25svh;
     }
     .title-banner{
         margin: 0;
@@ -1631,7 +1680,7 @@ footer{
         font-size: 15px;
     }
     .title-svg text {
-        font-size: 80px;
+        font-size: 100px;
     }
     
     /* VideoJuegos */
@@ -1723,12 +1772,12 @@ footer{
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1600px){
-    .banner {
+    /* .banner {
         height: 600px;
-    }
+    } */
     .banner-exc {
         width: 97%;
-        height: 32vh;
+        height: 32svh;
     }
 }
 @media screen and (min-width: 865px) and (max-width: 1200px){
@@ -1766,7 +1815,7 @@ footer{
         width: 50% !important;
     }
     .title-svg text {
-        font-size: 80px;
+        font-size: 100px;
     }
 
     /* VideoJuegos */
