@@ -692,21 +692,22 @@ nav{
 }
 .first-file .number{
     font-size: 35px;
-    font-family: "Jaro", serif;
+    font-family: "dincond-bold", serif;
     color: white;
     display: flex;
     align-items: center;
 }
 .first-file .letter{
     font-size: 90px;
-    font-family: "Jaro", serif;
+    font-family: "dincond-bold", serif;
     color: white;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 100;
+    letter-spacing: 3px;
 }
 .second-file .umber{
     font-size: 30px;
-    font-family: "Jaro", serif;
+    font-family: "dincond-bold", serif;
     color: #6fd3ff;
     letter-spacing: 1px;
 }
@@ -746,7 +747,7 @@ nav{
 }
 .vjuegos-block p{
     text-align: center;
-    font-family: "Jaro", serif;
+    font-family: "dincond-bold", serif;
     color: white;
     font-size: 30px;
 }
@@ -896,7 +897,7 @@ nav{
 }
 .pack--active .pack__img{
     width: 280px;
-    margin: 10px 0;
+    margin: 40px 0;
 }
 .pack__list {
     text-align: left;
