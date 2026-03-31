@@ -237,7 +237,7 @@ nav{
 }
 .banner-exc{
     width: 97%;
-    height: 32svh;
+    height: 40vh;
     min-height: 140px;
     border-radius: 0 0 40px 40px;
     justify-content: space-around;
@@ -248,32 +248,54 @@ nav{
     background-image: url(../img/banner-exc.png);
     background-repeat: no-repeat;
 }
-.title-svg text {
-    font-size: 50px;
+.title-bn {
+    position: relative;
+    font-size: 80px;
     font-weight: 900;
     font-family: 'Orbitron', sans-serif;
-    fill: rgba(255,255,255,0.01); /* 👈 truco */
-    stroke: url(#gradiente);
-    stroke-width: 3;
-    letter-spacing: 2px;
-    filter: drop-shadow(0 0 4px rgba(168, 85, 247, 0.5));
+    color: transparent;
 }
-
-/* ANIMACIÓN REAL EN EL BORDE */
-.banner-exc text {
-    animation: glows 2s ease-in-out infinite alternate;
+.title-bn::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #a855f7, #38bdf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 2px transparent;
+    text-shadow:
+        0 0 4px rgba(168, 85, 247, 0.3),
+        0 0 8px rgba(56, 189, 248, 0.3);
 }
+.title-bn::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
 
-@keyframes glows {
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255,255,255,0.15); /* borde suave base */
+}
+.title-bn::before {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
     from {
-        filter: drop-shadow(0 0 3px rgba(168, 85, 247, 0.25))
-                drop-shadow(0 0 6px rgba(168, 85, 247, 0.25));
+        text-shadow:
+            0 0 4px rgba(168, 85, 247, 0.3),
+            0 0 8px rgba(168, 85, 247, 0.3);
     }
     to {
-        filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.4))
-                drop-shadow(0 0 10px rgba(56, 189, 248, 0.4));
+        text-shadow:
+            0 0 10px rgba(56, 189, 248, 0.7),
+            0 0 20px rgba(56, 189, 248, 0.7),
+            0 0 30px rgba(56, 189, 248, 0.8);
     }
 }
+
+
 .spark {
     display: inline-block;
     width: 30px;
@@ -696,6 +718,7 @@ nav{
     color: white;
     display: flex;
     align-items: center;
+    letter-spacing: 3px;
 }
 .first-file .letter{
     font-size: 90px;
@@ -1473,8 +1496,11 @@ footer{
     }
 }
 @media (max-width: 767px){
-    .title-svg text{
-        font-size: 120px !important;
+    .title-bn{
+        font-size: 50px !important;
+    }
+    .title-simuld{
+        font-size: 40px !important;
     }
 }
 
@@ -1493,7 +1519,7 @@ footer{
         background-repeat: no-repeat;
         background-position: center bottom;
     }
-    .title-svg text{
+    .title-bn{
         font-size: 80px;
     }
     .img-banner {
@@ -1585,7 +1611,7 @@ footer{
         height: auto;
     }
     .banner-exc{
-        height: 25svh;
+        height: 25svh ;
     }
     .title-banner{
         margin: 0;
@@ -1680,7 +1706,7 @@ footer{
     .icon-inf p{
         font-size: 15px;
     }
-    .title-svg text {
+    .title-bn{
         font-size: 100px;
     }
     
@@ -1788,7 +1814,7 @@ footer{
         height: 600px;
     }
     .banner-exc{
-        height: 300px;
+        height: 300px !important;
     }
     .block-service{
         width: 40%;
@@ -1815,7 +1841,7 @@ footer{
     .mision, .vision, .objetivo {
         width: 50% !important;
     }
-    .title-svg text {
+    .title-bn{
         font-size: 100px;
     }
 
@@ -2020,9 +2046,11 @@ hr{
 }
 .form-contacto .name, .form-contacto textarea{
     height: 70px;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 10px;
     line-height: 30px;
+    font-weight: 500;
+    font-family: "BaiCustom", sans-serif;
 }
 .name{
     width: calc(50%);

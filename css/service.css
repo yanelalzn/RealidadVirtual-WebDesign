@@ -120,20 +120,6 @@
     display: flex;
     justify-content: center;
 }
-.first-file .number{
-    font-size: 35px;
-    font-family: "Jaro", serif;
-    color: white;
-    display: flex;
-    align-items: center;
-}
-.first-file .letter{
-    font-size: 90px;
-    font-family: "Jaro", serif;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 900;
-}
 .title-vjuegos{
     line-height: 65px;
     margin: 5rem 0 2rem 0;
